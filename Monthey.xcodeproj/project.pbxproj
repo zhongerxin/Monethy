@@ -32,8 +32,8 @@
 		63194F3D1DE67673005ABC69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63194F451DE67673005ABC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63194F471DE67673005ABC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		637905C51DE9DC2500DB2AD5 /* DINCond-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINCond-Black.otf"; path = "../../../UI/DINCond-Black.otf"; sourceTree = "<group>"; };
-		637905C61DE9DC2500DB2AD5 /* DINCond-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINCond-Regular.otf"; path = "../../../UI/DINCond-Regular.otf"; sourceTree = "<group>"; };
+		637905C51DE9DC2500DB2AD5 /* DINCond-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINCond-Black.otf"; path = "Font/DINCond-Black.otf"; sourceTree = "<group>"; };
+		637905C61DE9DC2500DB2AD5 /* DINCond-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINCond-Regular.otf"; path = "Font/DINCond-Regular.otf"; sourceTree = "<group>"; };
 		638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearChartViewController.swift; sourceTree = "<group>"; };
 		638CAAEF1DF8E255003FDE11 /* YearChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearChartViewController.xib; sourceTree = "<group>"; };
 		63CB18591DEA8B250014579A /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
