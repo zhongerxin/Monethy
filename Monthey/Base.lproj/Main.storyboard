@@ -202,6 +202,24 @@
             </objects>
             <point key="canvasLocation" x="1055.2" y="122.78860569715144"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ysq-Md-jvs">
+            <objects>
+                <viewController id="mop-hu-J3Q" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SDF-jO-FGr"/>
+                        <viewControllerLayoutGuide type="bottom" id="YC3-Lg-l7q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GgX-wC-INp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRD-sO-mpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="818"/>
+        </scene>
         <!--六月-->
         <scene sceneID="GOY-h4-ARF">
             <objects>
@@ -224,7 +242,7 @@
                                             <constraint firstAttribute="height" constant="170" id="sT7-Jo-3cD"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70000000.5" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zbV-RH-Mux">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80%" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zbV-RH-Mux">
                                         <rect key="frame" x="98" y="122" width="180" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="KQg-C5-Ij8"/>
@@ -242,15 +260,34 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2o-YY-001">
+                                        <rect key="frame" x="142" y="176" width="90" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qZd-5x-N0C"/>
+                                            <constraint firstAttribute="width" constant="90" id="qop-S8-CXd"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="该账户已删除金额记录保留">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="a2o-YY-001" firstAttribute="centerX" secondItem="RPs-nx-jyw" secondAttribute="centerX" id="20X-ST-MhI"/>
                                     <constraint firstItem="zbV-RH-Mux" firstAttribute="top" secondItem="ZSs-Vm-hBX" secondAttribute="bottom" id="2gl-U6-RyZ"/>
                                     <constraint firstItem="ZSs-Vm-hBX" firstAttribute="width" secondItem="RPs-nx-jyw" secondAttribute="width" multiplier="0.4" id="KYO-to-tT3"/>
                                     <constraint firstItem="zbV-RH-Mux" firstAttribute="width" secondItem="RPs-nx-jyw" secondAttribute="width" multiplier="0.48" id="QLP-7F-ADD"/>
                                     <constraint firstItem="ZSs-Vm-hBX" firstAttribute="centerX" secondItem="RPs-nx-jyw" secondAttribute="centerX" id="TuJ-Li-IyU"/>
                                     <constraint firstItem="umC-Fy-AQ1" firstAttribute="centerX" secondItem="RPs-nx-jyw" secondAttribute="centerX" id="XWK-Hf-E2K"/>
                                     <constraint firstItem="zbV-RH-Mux" firstAttribute="centerY" secondItem="umC-Fy-AQ1" secondAttribute="centerY" id="ax3-b8-rAy"/>
+                                    <constraint firstItem="a2o-YY-001" firstAttribute="top" secondItem="zbV-RH-Mux" secondAttribute="bottom" id="irC-CL-2Tc"/>
                                     <constraint firstItem="umC-Fy-AQ1" firstAttribute="centerY" secondItem="RPs-nx-jyw" secondAttribute="centerY" constant="5" id="t2W-Py-g5H"/>
                                     <constraint firstItem="zbV-RH-Mux" firstAttribute="centerX" secondItem="RPs-nx-jyw" secondAttribute="centerX" id="tne-Ze-MgP"/>
                                 </constraints>
