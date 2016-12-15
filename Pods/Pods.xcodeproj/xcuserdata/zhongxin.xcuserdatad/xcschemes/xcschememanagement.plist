@@ -4,17 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-MonethyReal.xcscheme</key>
+		<key>Charts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Realm.xcscheme</key>
+		<key>Pods-Monthey.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RealmSwift.xcscheme</key>
+		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00FF883C5E040A9769B301091D35F206</key>
+		<key>9DEE0E0FAEE935C0FB83C1B2CAA33B77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>04E73C8AAAF721395CD1B289A895C194</key>
+		<key>A74D83EE1ADF02824B32E380D28AD251</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A72F889213E3F984344DAA17FFEB486A</key>
+		<key>F307B842FF76B2DE6C55DB67C0885325</key>
 		<dict>
 			<key>primary</key>
 			<true/>

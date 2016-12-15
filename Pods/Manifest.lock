@@ -1,15 +1,26 @@
 PODS:
-  - Realm (1.0.2):
-    - Realm/Headers (= 1.0.2)
-  - Realm/Headers (1.0.2)
-  - RealmSwift (1.0.2):
-    - Realm (= 1.0.2)
+  - Charts (3.0.1):
+    - Charts/Core (= 3.0.1)
+  - Charts/Core (3.0.1)
+  - pop (1.0.9)
 
 DEPENDENCIES:
-  - RealmSwift
+  - Charts
+  - pop (from `https://github.com/facebook/pop.git`)
+
+EXTERNAL SOURCES:
+  pop:
+    :git: https://github.com/facebook/pop.git
+
+CHECKOUT OPTIONS:
+  pop:
+    :commit: 92b2c5b7bcad64f7507da34f921492c71ff1d330
+    :git: https://github.com/facebook/pop.git
 
 SPEC CHECKSUMS:
-  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
-  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
+  Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: ae7c6ed817ca270cc6090a0584863926c30626fa
+
+COCOAPODS: 1.1.1

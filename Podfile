@@ -3,9 +3,9 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-target 'MonethyReal' do
+target 'Monthey' do
 use_frameworks!
-pod 'RealmSwift'
-
+pod 'pop', :git => 'https://github.com/facebook/pop.git'
+pod 'Charts'
 end
 
