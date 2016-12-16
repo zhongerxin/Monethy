@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EDE304BE914F3A340C5868C /* Pods_Monthey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D56885B3F3201D7FB6907E /* Pods_Monthey.framework */; };
+		63127B051E03B746004ED653 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63127B041E03B746004ED653 /* AccountsViewController.swift */; };
 		63194F3C1DE67673005ABC69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63194F3B1DE67673005ABC69 /* AppDelegate.swift */; };
 		63194F3E1DE67673005ABC69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63194F3D1DE67673005ABC69 /* ViewController.swift */; };
 		63194F461DE67673005ABC69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63194F441DE67673005ABC69 /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 		11A167B183B10735667978B3 /* Pods-Monthey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monthey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Monthey/Pods-Monthey.debug.xcconfig"; sourceTree = "<group>"; };
 		159FA625171F0DC23D3C2301 /* Pods-Monthey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monthey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monthey/Pods-Monthey.release.xcconfig"; sourceTree = "<group>"; };
 		15D56885B3F3201D7FB6907E /* Pods_Monthey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monthey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63127B041E03B746004ED653 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		63194F381DE67673005ABC69 /* Monthey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monthey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63194F3B1DE67673005ABC69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63194F3D1DE67673005ABC69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				63E701AE1DF6FA0C000683CF /* SumMoneyViewController.swift */,
 				638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */,
 				63E093461E00E97B0067DB67 /* MonthDetailViewController.swift */,
+				63127B041E03B746004ED653 /* AccountsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -167,7 +170,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = zhongxin;
 				TargetAttributes = {
 					63194F371DE67673005ABC69 = {
@@ -270,6 +273,7 @@
 				63CB185A1DEA8B250014579A /* ExampleTableViewController.swift in Sources */,
 				63194F3E1DE67673005ABC69 /* ViewController.swift in Sources */,
 				63194F3C1DE67673005ABC69 /* AppDelegate.swift in Sources */,
+				63127B051E03B746004ED653 /* AccountsViewController.swift in Sources */,
 				63E701B01DF6FA0C000683CF /* SumMoneyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
