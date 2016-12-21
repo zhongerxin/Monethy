@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M3f-UR-u0h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M3f-UR-u0h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -45,7 +45,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qlb-L2-q72" id="4zg-WW-d0j">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjj-VG-YYS">
@@ -247,7 +247,7 @@
                                                                 <constraint firstAttribute="height" constant="21" id="zh0-b1-3P6"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                            <color key="textColor" red="0.98272921950000003" green="0.98272921950000003" blue="0.98272921950000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                             <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <size key="shadowOffset" width="0.0" height="1"/>
@@ -480,7 +480,7 @@
                                         <rect key="frame" x="0.0" y="178" width="375" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sAF-Ld-EY2" id="gWe-J6-wb4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sn-yn-CvA">
@@ -586,7 +586,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M3f-UR-u0h" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="i7e-Xu-Gw9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i7e-Xu-Gw9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

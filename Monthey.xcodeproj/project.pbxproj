@@ -12,6 +12,10 @@
 		63194F3C1DE67673005ABC69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63194F3B1DE67673005ABC69 /* AppDelegate.swift */; };
 		63194F3E1DE67673005ABC69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63194F3D1DE67673005ABC69 /* ViewController.swift */; };
 		63194F461DE67673005ABC69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63194F441DE67673005ABC69 /* LaunchScreen.storyboard */; };
+		634CB8B21E0A593800A4DC28 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634CB8B01E0A593800A4DC28 /* Realm.framework */; };
+		634CB8B31E0A593800A4DC28 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 634CB8B01E0A593800A4DC28 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		634CB8B41E0A593800A4DC28 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634CB8B11E0A593800A4DC28 /* RealmSwift.framework */; };
+		634CB8B51E0A593800A4DC28 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 634CB8B11E0A593800A4DC28 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		638CAAF01DF8E255003FDE11 /* YearChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */; };
 		638CAAF11DF8E255003FDE11 /* YearChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638CAAEF1DF8E255003FDE11 /* YearChartViewController.xib */; };
 		63CB185A1DEA8B250014579A /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB18591DEA8B250014579A /* ExampleTableViewController.swift */; };
@@ -24,6 +28,21 @@
 		63E701B31DF6FB11000683CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E701B21DF6FB11000683CF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		634CB8B61E0A593800A4DC28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				634CB8B51E0A593800A4DC28 /* RealmSwift.framework in Embed Frameworks */,
+				634CB8B31E0A593800A4DC28 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		11A167B183B10735667978B3 /* Pods-Monthey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monthey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Monthey/Pods-Monthey.debug.xcconfig"; sourceTree = "<group>"; };
 		159FA625171F0DC23D3C2301 /* Pods-Monthey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monthey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monthey/Pods-Monthey.release.xcconfig"; sourceTree = "<group>"; };
@@ -34,6 +53,8 @@
 		63194F3D1DE67673005ABC69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63194F451DE67673005ABC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63194F471DE67673005ABC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634CB8B01E0A593800A4DC28 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		634CB8B11E0A593800A4DC28 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		637905C51DE9DC2500DB2AD5 /* DINCond-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINCond-Black.otf"; path = "Font/DINCond-Black.otf"; sourceTree = "<group>"; };
 		637905C61DE9DC2500DB2AD5 /* DINCond-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINCond-Regular.otf"; path = "Font/DINCond-Regular.otf"; sourceTree = "<group>"; };
 		638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearChartViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634CB8B21E0A593800A4DC28 /* Realm.framework in Frameworks */,
 				0EDE304BE914F3A340C5868C /* Pods_Monthey.framework in Frameworks */,
+				634CB8B41E0A593800A4DC28 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,8 @@
 		0E83DDE611FEB62CDB5728D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				634CB8B01E0A593800A4DC28 /* Realm.framework */,
+				634CB8B11E0A593800A4DC28 /* RealmSwift.framework */,
 				15D56885B3F3201D7FB6907E /* Pods_Monthey.framework */,
 			);
 			name = Frameworks;
@@ -153,6 +178,7 @@
 				63194F361DE67673005ABC69 /* Resources */,
 				A829BD28C8FE6869AEEAD2CB /* [CP] Embed Pods Frameworks */,
 				71B1A13533E625D67403A911 /* [CP] Copy Pods Resources */,
+				634CB8B61E0A593800A4DC28 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -341,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -406,6 +432,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Monthey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twox.Monthey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,6 +453,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Monthey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twox.Monthey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
