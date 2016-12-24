@@ -432,11 +432,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Monthey/Info.plist;
-<<<<<<< Updated upstream
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-=======
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
->>>>>>> Stashed changes
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twox.Monthey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,11 +453,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Monthey/Info.plist;
-<<<<<<< Updated upstream
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-=======
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
->>>>>>> Stashed changes
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twox.Monthey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
