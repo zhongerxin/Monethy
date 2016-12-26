@@ -19,6 +19,9 @@
 		638CAAF01DF8E255003FDE11 /* YearChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */; };
 		638CAAF11DF8E255003FDE11 /* YearChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638CAAEF1DF8E255003FDE11 /* YearChartViewController.xib */; };
 		63CB185A1DEA8B250014579A /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB18591DEA8B250014579A /* ExampleTableViewController.swift */; };
+		63D0AEB11E115E2D00F4FCD7 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0AEB01E115E2D00F4FCD7 /* Account.swift */; };
+		63D0AEB31E115E3E00F4FCD7 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0AEB21E115E3E00F4FCD7 /* Month.swift */; };
+		63D0AEB51E115E5E00F4FCD7 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0AEB41E115E5E00F4FCD7 /* Record.swift */; };
 		63D40C1E1DF6FE660062A74A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D40C1C1DF6FE660062A74A /* Main.storyboard */; };
 		63DB5C1E1DE9DE1200CA27E0 /* DINCond-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 637905C51DE9DC2500DB2AD5 /* DINCond-Black.otf */; };
 		63DB5C1F1DE9DE1200CA27E0 /* DINCond-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 637905C61DE9DC2500DB2AD5 /* DINCond-Regular.otf */; };
@@ -60,6 +63,9 @@
 		638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearChartViewController.swift; sourceTree = "<group>"; };
 		638CAAEF1DF8E255003FDE11 /* YearChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearChartViewController.xib; sourceTree = "<group>"; };
 		63CB18591DEA8B250014579A /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
+		63D0AEB01E115E2D00F4FCD7 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		63D0AEB21E115E3E00F4FCD7 /* Month.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		63D0AEB41E115E5E00F4FCD7 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Record.swift; path = ../Record.swift; sourceTree = "<group>"; };
 		63D40C1D1DF6FE660062A74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63E093461E00E97B0067DB67 /* MonthDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthDetailViewController.swift; sourceTree = "<group>"; };
 		63E701AE1DF6FA0C000683CF /* SumMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumMoneyViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 			children = (
 				63E701AD1DF6F9D5000683CF /* Controller */,
 				63D40C1F1DF701330062A74A /* View */,
+				63D0AEB61E115E6800F4FCD7 /* Data */,
 				63194F3B1DE67673005ABC69 /* AppDelegate.swift */,
 				63E701B21DF6FB11000683CF /* Assets.xcassets */,
 				63194F471DE67673005ABC69 /* Info.plist */,
@@ -140,6 +147,16 @@
 			);
 			name = Font;
 			path = Monthey;
+			sourceTree = "<group>";
+		};
+		63D0AEB61E115E6800F4FCD7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				63D0AEB41E115E5E00F4FCD7 /* Record.swift */,
+				63D0AEB01E115E2D00F4FCD7 /* Account.swift */,
+				63D0AEB21E115E3E00F4FCD7 /* Month.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		63D40C1F1DF701330062A74A /* View */ = {
@@ -296,9 +313,12 @@
 			files = (
 				63E093471E00E97B0067DB67 /* MonthDetailViewController.swift in Sources */,
 				638CAAF01DF8E255003FDE11 /* YearChartViewController.swift in Sources */,
+				63D0AEB51E115E5E00F4FCD7 /* Record.swift in Sources */,
+				63D0AEB31E115E3E00F4FCD7 /* Month.swift in Sources */,
 				63CB185A1DEA8B250014579A /* ExampleTableViewController.swift in Sources */,
 				63194F3E1DE67673005ABC69 /* ViewController.swift in Sources */,
 				63194F3C1DE67673005ABC69 /* AppDelegate.swift in Sources */,
+				63D0AEB11E115E2D00F4FCD7 /* Account.swift in Sources */,
 				63127B051E03B746004ED653 /* AccountsViewController.swift in Sources */,
 				63E701B01DF6FA0C000683CF /* SumMoneyViewController.swift in Sources */,
 			);
