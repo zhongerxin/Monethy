@@ -2743,8 +2743,8 @@ _TwxsV10RealmSwift17SyncConfiguration
 L_selector(credentialsWithFacebookToken:)
 L_selector_data(credentialsWithGoogleToken:)
 L_selector(credentialsWithGoogleToken:)
-L_selector_data(credentialsWithCloudKitToken:)
-L_selector(credentialsWithCloudKitToken:)
+L_selector_data(credentialsWithICloudToken:)
+L_selector(credentialsWithICloudToken:)
 L_selector_data(credentialsWithUsername:password:register:)
 L_selector(credentialsWithUsername:password:register:)
 L_selector_data(credentialsWithAccessToken:identity:)
@@ -2839,7 +2839,7 @@ allUsers
 logInWithCredentials
 accessToken
 usernamePassword
-cloudKit
+iCloud
 google
 facebook
 realmURL.get

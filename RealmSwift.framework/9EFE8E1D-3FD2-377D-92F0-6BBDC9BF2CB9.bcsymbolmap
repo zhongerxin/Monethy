@@ -1026,22 +1026,6 @@ convert_string
 adoptCF<const __CFString *>
 format<int &>
 Realm/ObjectStore/src/util/format.hpp
--[RLMSyncErrorResponseModel initWithDictionary:]
--[RLMSyncErrorResponseModel status]
--[RLMSyncErrorResponseModel setStatus:]
--[RLMSyncErrorResponseModel code]
--[RLMSyncErrorResponseModel setCode:]
--[RLMSyncErrorResponseModel title]
--[RLMSyncErrorResponseModel setTitle:]
--[RLMSyncErrorResponseModel hint]
--[RLMSyncErrorResponseModel setHint:]
--[RLMSyncErrorResponseModel .cxx_destruct]
-_OBJC_IVAR_$_RLMSyncErrorResponseModel._status
-_OBJC_IVAR_$_RLMSyncErrorResponseModel._code
-_OBJC_IVAR_$_RLMSyncErrorResponseModel._title
-_OBJC_IVAR_$_RLMSyncErrorResponseModel._hint
-/Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncErrorResponseModel.m
-/Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncErrorResponseModel.h
 +[RLMSyncPermissionChange permissionChangeWithRealmURL:userID:read:write:manage:]
 +[RLMSyncPermissionChange requiredProperties]
 +[RLMSyncPermissionChange defaultPropertyValues]
@@ -3071,11 +3055,9 @@ schema_version
 +[RLMNetworkClient postRequestToEndpoint:server:JSON:completion:]
 +[RLMNetworkClient postRequestToEndpoint:server:JSON:timeout:completion:]
 ___73+[RLMNetworkClient postRequestToEndpoint:server:JSON:timeout:completion:]_block_invoke
-+[RLMNetworkClient validateResponse:data:error:]
-+[RLMNetworkClient errorFromResponseData:]
 /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMNetworkClient.m
-NSLocationInRange
 __73+[RLMNetworkClient postRequestToEndpoint:server:JSON:timeout:completion:]_block_invoke
+NSLocationInRange
 -[RLMObject init]
 -[RLMObject initWithValue:schema:]
 -[RLMObject initWithRealm:schema:]
@@ -3510,7 +3492,7 @@ __ZNSt3__110__function6__funcIZNK5realm5_impl19sync_session_states5Dying11enter_
 __ZNSt3__110__function6__funcIZNK5realm5_impl19sync_session_states5Dying11enter_stateERNS_11unique_lockINS_5mutexEEERNS2_11SyncSessionEEUlNS_10error_codeEE_NS_9allocatorISD_EEFvSC_EEclEOSC_
 __ZNKSt3__110__function6__funcIZNK5realm5_impl19sync_session_states5Dying11enter_stateERNS_11unique_lockINS_5mutexEEERNS2_11SyncSessionEEUlNS_10error_codeEE_NS_9allocatorISD_EEFvSC_EE6targetERKSt9type_info
 __ZNKSt3__110__function6__funcIZNK5realm5_impl19sync_session_states5Dying11enter_stateERNS_11unique_lockINS_5mutexEEERNS2_11SyncSessionEEUlNS_10error_codeEE_NS_9allocatorISD_EEFvSC_EE11target_typeEv
-__ZNSt3__128__invoke_void_return_wrapperIvE6__callIJRZNK5realm5_impl19sync_session_states5Dying11enter_stateERNS_11unique_lockINS_5mutexEEERNS3_11SyncSessionEEUlNS_10error_codeEE_SD_EEEvDpOT_
+__ZZNK5realm5_impl19sync_session_states5Dying11enter_stateERNSt3__111unique_lockINS3_5mutexEEERNS_11SyncSessionEENKUlNS3_10error_codeEE_clESA_
 __ZN5realm5_impl19sync_session_states8InactiveD0Ev
 __ZNK5realm5_impl19sync_session_states8Inactive11enter_stateERNSt3__111unique_lockINS3_5mutexEEERNS_11SyncSessionE
 __ZNK5realm5_impl19sync_session_states8Inactive21bind_with_admin_tokenERNSt3__111unique_lockINS3_5mutexEEERNS_11SyncSessionERKNS3_12basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEESH_
@@ -3572,23 +3554,23 @@ __ZTINSt3__110__function6__funcIZN5realm11SyncSession19create_sync_sessionEvE3$_
 __ZTSZN5realm11SyncSession19create_sync_sessionEvE3$_1
 __ZTIZN5realm11SyncSession19create_sync_sessionEvE3$_1
 /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp
-__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29) &, realm::VersionID, realm::VersionID>
-__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29) &, realm::VersionID, realm::VersionID>
-__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29)> &>
-__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29)> &, 0, 0>
+__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29) &, realm::VersionID, realm::VersionID>
+__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29) &, realm::VersionID, realm::VersionID>
+__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29)> &>
+__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29)> &, 0, 0>
 _ZZN5realm11SyncSession19create_sync_sessionEvEN3$_1C1ERKS1_
 _ZZN5realm11SyncSession19create_sync_sessionEvEN3$_1C2ERKS1_
-__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29)> &&>
-__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29)> &&, 0, 0>
-__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28) &, int, std::__1::basic_string<char> >
-__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28) &, int, std::__1::basic_string<char> >
+__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29)> &&>
+__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29)> &&, 0, 0>
+__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28) &, int, std::__1::basic_string<char> >
+__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28) &, int, std::__1::basic_string<char> >
 user
-__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28)> &>
-__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28)> &, 0, 0>
+__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28)> &>
+__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28)> &, 0, 0>
 _ZZN5realm11SyncSession19create_sync_sessionEvEN3$_0C1ERKS1_
 _ZZN5realm11SyncSession19create_sync_sessionEvEN3$_0C2ERKS1_
-__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28)> &&>
-__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28)> &&, 0, 0>
+__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28)> &&>
+__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28)> &&, 0, 0>
 shared_ptr<realm::SyncSession>
 enter_state
 ~SyncConfig
@@ -3599,6 +3581,8 @@ revive_if_needed
 bind_with_admin_token
 OptionalStorage<const std::__1::basic_string<char> &>
 ~Inactive
+error_code<realm::util::error::basic_system_errors>
+category
 __call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:214:61) &, std::__1::error_code>
 __invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:214:61) &, std::__1::error_code>
 __compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:214:61) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:214:61)> &>
@@ -3624,14 +3608,14 @@ wait_for_download_completion
 async_wait_for_download_completion
 wait_for_upload_completion
 advance_state
-function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29)>
-__compressed_pair<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29)> &&>
-__libcpp_compressed_pair_imp<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:372:29)> &&, 0, 0>
+function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29)>
+__compressed_pair<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29)> &&>
+__libcpp_compressed_pair_imp<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:380:29)> &&, 0, 0>
 _ZZN5realm11SyncSession19create_sync_sessionEvEN3$_1C1EOS1_
 _ZZN5realm11SyncSession19create_sync_sessionEvEN3$_1C2EOS1_
-function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28)>
-__compressed_pair<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28)> &&>
-__libcpp_compressed_pair_imp<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:292:28)> &&, 0, 0>
+function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28)>
+__compressed_pair<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28)> &&>
+__libcpp_compressed_pair_imp<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_session.cpp:300:28)> &&, 0, 0>
 _ZZN5realm11SyncSession19create_sync_sessionEvEN3$_0C1EOS1_
 _ZZN5realm11SyncSession19create_sync_sessionEvEN3$_0C2EOS1_
 weak_ptr<realm::SyncSession>
@@ -3726,7 +3710,6 @@ RLMPropertyTypeIsNullable
 __ZL15RLMPreconditionbP8NSStringS0_z
 __ZN12_GLOBAL__N_19get_tableERN5realm5GroupEP15RLMObjectSchema
 __ZN12_GLOBAL__N_112QueryBuilder15apply_predicateEP11NSPredicateP15RLMObjectSchema
-__ZNSt3__16vectorImNS_9allocatorImEEED1Ev
 __ZL21RLMPredicateExceptionP8NSStringS0_z
 __ZN12_GLOBAL__N_112QueryBuilder23apply_column_expressionEP15RLMObjectSchemaP8NSStringS4_P21NSComparisonPredicate
 __ZN12_GLOBAL__N_112QueryBuilder22apply_value_expressionEP15RLMObjectSchemaP8NSStringP11objc_objectP21NSComparisonPredicate
@@ -4561,25 +4544,6 @@ __ZNK5realm7CompareINS_11NotEqualInsENS_10StringDataENS_7SubexprES3_E5cloneEPNSt
 __ZN5realm7CompareINS_11NotEqualInsENS_10StringDataENS_7SubexprES3_E20apply_handover_patchERNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEERNS_5GroupE
 __ZNK5realm11NotEqualInsclENS_10StringDataES1_bb
 __ZN5realm7CompareINS_11NotEqualInsENS_10StringDataENS_7SubexprES3_EC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_ED1Ev
-__ZN5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_ED0Ev
-__ZNK5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_E10find_firstEmm
-__ZN5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_E14set_base_tableEPKNS_5TableE
-__ZNK5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_E14get_base_tableEv
-__ZNK5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_E5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_E20apply_handover_patchERNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEERNS_5GroupE
-__ZNK5realm4LikeclENS_10StringDataES1_bb
-__ZN5realm10StringData9matchlikeERKS0_S2_
-__ZN5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_EC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_ED1Ev
-__ZN5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_ED0Ev
-__ZNK5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_E10find_firstEmm
-__ZN5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_E14set_base_tableEPKNS_5TableE
-__ZNK5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_E14get_base_tableEv
-__ZNK5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_E5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_E20apply_handover_patchERNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEERNS_5GroupE
-__ZNK5realm7LikeInsclENS_10StringDataES1_bb
-__ZN5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_EC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
 __ZN5realm5Table6columnINS_10StringDataEEENS_7ColumnsIT_EEm
 __ZN5realm18SimpleQuerySupportINS_10StringDataEEC2EmPKNS_5TableENSt3__16vectorImNS6_9allocatorImEEEE
 __ZN5realm7ColumnsINS_10StringDataEED0Ev
@@ -5065,10 +5029,6 @@ __ZTSN5realm7CompareINS_8NotEqualENS_10StringDataENS_7SubexprES3_EE
 __ZTIN5realm7CompareINS_8NotEqualENS_10StringDataENS_7SubexprES3_EE
 __ZTSN5realm7CompareINS_11NotEqualInsENS_10StringDataENS_7SubexprES3_EE
 __ZTIN5realm7CompareINS_11NotEqualInsENS_10StringDataENS_7SubexprES3_EE
-__ZTSN5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_EE
-__ZTIN5realm7CompareINS_4LikeENS_10StringDataENS_7SubexprES3_EE
-__ZTSN5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_EE
-__ZTIN5realm7CompareINS_7LikeInsENS_10StringDataENS_7SubexprES3_EE
 __ZTSN5realm16UnaryLinkCompareILb0EEE
 __ZTIN5realm16UnaryLinkCompareILb0EEE
 __ZTSN5realm13FindNullLinksE
@@ -5208,7 +5168,6 @@ has_links
 value_of_type<realm::StringData>
 convert<realm::StringData>
 add_string_constraint<realm::StringData>
-like
 not_equal
 equal
 ends_with
@@ -5448,9 +5407,6 @@ has_any_to_many_links
 any_of<std::__1::__wrap_iter<RLMProperty *const __strong *>, (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMQueryUtil.mm:200:58)>
 end<std::__1::vector<RLMProperty *, std::__1::allocator<RLMProperty *> > >
 begin<std::__1::vector<RLMProperty *, std::__1::allocator<RLMProperty *> > >
-string_compare<realm::Like, realm::LikeIns>
-make_expression<realm::Compare<realm::LikeIns, realm::StringData, realm::Subexpr, realm::Subexpr>, std::__1::unique_ptr<realm::Subexpr, std::__1::default_delete<realm::Subexpr> >, std::__1::unique_ptr<realm::Subexpr, std::__1::default_delete<realm::Subexpr> > >
-make_expression<realm::Compare<realm::Like, realm::StringData, realm::Subexpr, realm::Subexpr>, std::__1::unique_ptr<realm::Subexpr, std::__1::default_delete<realm::Subexpr> >, std::__1::unique_ptr<realm::Subexpr, std::__1::default_delete<realm::Subexpr> > >
 string_compare<realm::NotEqual, realm::NotEqualIns>
 make_expression<realm::Compare<realm::NotEqualIns, realm::StringData, realm::Subexpr, realm::Subexpr>, std::__1::unique_ptr<realm::Subexpr, std::__1::default_delete<realm::Subexpr> >, std::__1::unique_ptr<realm::Subexpr, std::__1::default_delete<realm::Subexpr> > >
 make_expression<realm::Compare<realm::NotEqual, realm::StringData, realm::Subexpr, realm::Subexpr>, std::__1::unique_ptr<realm::Subexpr, std::__1::default_delete<realm::Subexpr> >, std::__1::unique_ptr<realm::Subexpr, std::__1::default_delete<realm::Subexpr> > >
@@ -5486,14 +5442,6 @@ Columns
 set<realm::StringData>
 only_unary_links
 column<realm::StringData>
-compare<realm::LikeIns>
-matchlike
-construct<unsigned long, const unsigned long &>
-__construct<unsigned long, const unsigned long &>
-compare<realm::Like>
-create<realm::LikeIns, realm::StringData, realm::StringData>
-create<realm::Like, realm::StringData, realm::StringData>
-string_compare<realm::StringData, realm::Like, realm::LikeIns>
 compare<realm::NotEqualIns>
 operator()<realm::StringData>
 create<realm::NotEqualIns, realm::StringData, realm::StringData>
@@ -5713,6 +5661,8 @@ make_subexpr<realm::LinkCount, const realm::LinkCount &, std::__1::vector<std::_
 LinkCount
 count_links
 CountLinks
+construct<unsigned long, const unsigned long &>
+__construct<unsigned long, const unsigned long &>
 copy<realm::RowIndex *, realm::RowIndex *>
 __copy<realm::RowIndex *, realm::RowIndex *>
 make_subexpr<realm::Value<realm::RowIndex>, const realm::Value<realm::RowIndex> &>
@@ -5857,7 +5807,7 @@ operator<<realm::Timestamp>
 add_bool_constraint<bool, realm::Columns<bool> >
 operator!=<bool>
 operator==<bool>
-process_or_group<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMQueryUtil.mm:1078:42)>
+process_or_group<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMQueryUtil.mm:1075:42)>
 apply_collection_operator_expression
 key_path_contains_collection_operator
 apply_column_expression
@@ -5869,7 +5819,7 @@ __construct_range_forward<const unsigned long *, unsigned long *>
 RLMValidatedColumnForSort
 apply_predicate
 apply_function_expression
-process_or_group<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMQueryUtil.mm:1225:63)>
+process_or_group<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMQueryUtil.mm:1222:63)>
 RLMPredicateToQuery
 RLMPrecondition
 RLMValidatedProperty
@@ -6326,10 +6276,10 @@ ScopeExit
 -[RLMSyncConfiguration rawConfiguration]
 -[RLMSyncConfiguration user]
 -[RLMSyncConfiguration stopPolicy]
--[RLMSyncConfiguration setStopPolicy:]
 -[RLMSyncConfiguration realmURL]
 -[RLMSyncConfiguration initWithUser:realmURL:]
 -[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]
+-[RLMSyncConfiguration setStopPolicy:]
 -[RLMSyncConfiguration customFileURL]
 -[RLMSyncConfiguration setCustomFileURL:]
 -[RLMSyncConfiguration .cxx_destruct]
@@ -6353,6 +6303,7 @@ __ZNSt3__110__function6__funcIZ84-[RLMSyncConfiguration initWithUser:realmURL:cu
 __ZNKSt3__110__function6__funcIZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]E3$_1NS_9allocatorIS2_EEFvRKNS_12basic_stringIcNS_11char_traitsIcEENS3_IcEEEERKN5realm10SyncConfigENS_10shared_ptrINSC_11SyncSessionEEEEE6targetERKSt9type_info
 __ZNKSt3__110__function6__funcIZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]E3$_1NS_9allocatorIS2_EEFvRKNS_12basic_stringIcNS_11char_traitsIcEENS3_IcEEEERKN5realm10SyncConfigENS_10shared_ptrINSC_11SyncSessionEEEEE11target_typeEv
 _OBJC_IVAR_$_RLMSyncConfiguration._config
+_OBJC_IVAR_$_RLMSyncConfiguration._stopPolicy
 _OBJC_IVAR_$_RLMSyncConfiguration._customFileURL
 __ZTVNSt3__110__function6__funcIZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]E3$_0NS_9allocatorIS2_EEFvNS_10shared_ptrIN5realm11SyncSessionEEEiNS_12basic_stringIcNS_11char_traitsIcEENS3_IcEEEENS6_16SyncSessionErrorEEEE
 __ZTSNSt3__110__function6__funcIZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]E3$_0NS_9allocatorIS2_EEFvNS_10shared_ptrIN5realm11SyncSessionEEEiNS_12basic_stringIcNS_11char_traitsIcEENS3_IcEEEENS6_16SyncSessionErrorEEEE
@@ -6369,32 +6320,32 @@ __ZTINSt3__110__function6__funcIZ84-[RLMSyncConfiguration initWithUser:realmURL:
 __ZTSZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]E3$_1
 __ZTIZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]E3$_1
 /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm
-__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28) &, const std::__1::basic_string<char> &, const realm::SyncConfig &, std::__1::shared_ptr<realm::SyncSession> >
-__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28) &, const std::__1::basic_string<char> &, const realm::SyncConfig &, std::__1::shared_ptr<realm::SyncSession> >
-__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28)> &>
-__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28)> &, 0, 0>
+__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28) &, const std::__1::basic_string<char> &, const realm::SyncConfig &, std::__1::shared_ptr<realm::SyncSession> >
+__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28) &, const std::__1::basic_string<char> &, const realm::SyncConfig &, std::__1::shared_ptr<realm::SyncSession> >
+__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28)> &>
+__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28)> &, 0, 0>
 _ZZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]EN3$_1C1ERKS_
 _ZZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]EN3$_1C2ERKS_
-__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28)> &&>
-__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28)> &&, 0, 0>
-__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:132:28) &, std::__1::shared_ptr<realm::SyncSession>, int, std::__1::basic_string<char>, realm::SyncSessionError>
-__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:132:28) &, std::__1::shared_ptr<realm::SyncSession>, int, std::__1::basic_string<char>, realm::SyncSessionError>
+__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28)> &&>
+__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28)> &&, 0, 0>
+__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:126:28) &, std::__1::shared_ptr<realm::SyncSession>, int, std::__1::basic_string<char>, realm::SyncSessionError>
+__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:126:28) &, std::__1::shared_ptr<realm::SyncSession>, int, std::__1::basic_string<char>, realm::SyncSessionError>
 errorKindForSessionError
 swap<std::__1::__function::__base<void (std::__1::shared_ptr<realm::SyncSession>, int, std::__1::basic_string<char>, realm::SyncSessionError)> *>
 /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration_Private.h
 make_unique<realm::SyncConfig, realm::SyncConfig>
-function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28)>
-__compressed_pair<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28) &&>
-__libcpp_compressed_pair_imp<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:122:28) &&, 0>
+function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28)>
+__compressed_pair<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28) &&>
+__libcpp_compressed_pair_imp<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:116:28) &&, 0>
 _ZZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]EN3$_1C1EOS_
 _ZZ84-[RLMSyncConfiguration initWithUser:realmURL:customFileURL:stopPolicy:errorHandler:]EN3$_1C2EOS_
-operator=<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:132:28)>
-function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:132:28)>
+operator=<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:126:28)>
+function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncConfiguration.mm:126:28)>
 isValidRealmURL
 make_unique<realm::SyncConfig, realm::SyncConfig &>
 +[RLMSyncCredentials credentialsWithFacebookToken:]
 +[RLMSyncCredentials credentialsWithGoogleToken:]
-+[RLMSyncCredentials credentialsWithCloudKitToken:]
++[RLMSyncCredentials credentialsWithICloudToken:]
 +[RLMSyncCredentials credentialsWithUsername:password:register:]
 +[RLMSyncCredentials credentialsWithAccessToken:identity:]
 -[RLMSyncCredentials isEqual:]
@@ -6664,7 +6615,9 @@ _ZZN5realm8SyncUserC1ENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocator
 _ZZN5realm8SyncUserC1ENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES7_NS_4util8OptionalIS7_EEbEN3$_0C2ERKSB_
 __compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_user.cpp:38:55) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_user.cpp:38:55)> &&>
 __libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_user.cpp:38:55) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_user.cpp:38:55)> &&, 0, 0>
+__hash_const_iterator
 register_session
+operator()<std::__1::unordered_map<std::__1::basic_string<char>, std::__1::weak_ptr<realm::SyncSession>, std::__1::hash<std::__1::basic_string<char> >, std::__1::equal_to<std::__1::basic_string<char> >, std::__1::allocator<std::__1::pair<const std::__1::basic_string<char>, std::__1::weak_ptr<realm::SyncSession> > > > >
 refresh_token
 invalidate
 function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_user.cpp:147:55)>
@@ -6679,7 +6632,7 @@ __libcpp_compressed_pair_imp<(lambda at /Users/realm/workspace/Package iOS Swift
 _ZZN5realm8SyncUser20update_refresh_tokenENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEN3$_1C1EOS8_
 _ZZN5realm8SyncUser20update_refresh_tokenENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEN3$_1C2EOS8_
 emplace_back<std::__1::shared_ptr<realm::SyncSession> >
-session_for_on_disk_path
+session_for_url
 all_sessions
 is_in_error_state
 SyncUser
@@ -6709,8 +6662,14 @@ ___75-[RLMSyncUser _bindSessionWithPath:config:session:completion:isStandalone:]
 -[RLMSyncUser _syncUser]
 +[RLMSyncUser _performLogInForUser:credentials:authServerURL:timeout:completionBlock:]
 ___86+[RLMSyncUser _performLogInForUser:credentials:authServerURL:timeout:completionBlock:]_block_invoke
-___copy_helper_block_.132
-___destroy_helper_block_.133
+___86+[RLMSyncUser _performLogInForUser:credentials:authServerURL:timeout:completionBlock:]_block_invoke_2
+___copy_helper_block_.118
+___destroy_helper_block_.119
+___copy_helper_block_.122
+___destroy_helper_block_.123
+___86+[RLMSyncUser _performLogInForUser:credentials:authServerURL:timeout:completionBlock:]_block_invoke.136
+___copy_helper_block_.141
+___destroy_helper_block_.142
 +[RLMSyncUser _performLoginForDirectAccessTokenCredentials:user:completionBlock:]
 -[RLMSyncUser authenticationServer]
 -[RLMSyncUser setAuthenticationServer:]
@@ -6719,11 +6678,14 @@ ___destroy_helper_block_.133
 -[RLMSyncUser .cxx_destruct]
 -[RLMSyncUser .cxx_construct]
 _OBJC_IVAR_$_RLMSyncUser._user
-___block_descriptor_tmp.134
+___block_descriptor_tmp.121
+___block_descriptor_tmp.143
 _OBJC_IVAR_$_RLMSyncUser._authenticationServer
 _OBJC_IVAR_$_RLMSyncUser._refreshHandles
 /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncUser.mm
 /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/RLMSyncUser.h
+__86+[RLMSyncUser _performLogInForUser:credentials:authServerURL:timeout:completionBlock:]_block_invoke.136
+__86+[RLMSyncUser _performLogInForUser:credentials:authServerURL:timeout:completionBlock:]_block_invoke_2
 __86+[RLMSyncUser _performLogInForUser:credentials:authServerURL:timeout:completionBlock:]_block_invoke
 __75-[RLMSyncUser _bindSessionWithPath:config:session:completion:isStandalone:]_block_invoke
 Realm/ObjectStore/src/sync/sync_user.hpp
@@ -6781,7 +6743,6 @@ RLMIsObjectOrSubclass
 RLMSetTreatFakeObjectAsRLMObject
 RLMSetErrorOrThrow
 RLMMakeError
-category
 underlying
 RLMException
 RLMDefaultValuesForObjectSchema
@@ -6916,8 +6877,6 @@ operator==<realm::ObjectSchema, std::__1::allocator<realm::ObjectSchema> >
 equal<std::__1::__wrap_iter<const realm::ObjectSchema *>, std::__1::__wrap_iter<const realm::ObjectSchema *> >
 equal<std::__1::__wrap_iter<const realm::ObjectSchema *>, std::__1::__wrap_iter<const realm::ObjectSchema *>, std::__1::__equal_to<realm::ObjectSchema, realm::ObjectSchema> >
 __ZNK5realm19SyncMetadataResultsINS_16SyncUserMetadataEE3getEm
-__ZN5realm5_impl10SyncClient4stopEv
-__ZN5realm5_impl10SyncClientD2Ev
 __ZNSt3__114__split_bufferIZN5realm11SyncManager21configure_file_systemERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS2_12MetadataModeENS1_4util8OptionalINS_6vectorIcS7_EEEEbE16UserCreationDataRNS6_ISH_EEED1Ev
 __ZNSt3__120__shared_ptr_emplaceIN5realm8SyncUserENS_9allocatorIS2_EEED1Ev
 __ZNSt3__120__shared_ptr_emplaceIN5realm8SyncUserENS_9allocatorIS2_EEED0Ev
@@ -6942,10 +6901,13 @@ __ZN5realm4util12StderrLogger6do_logENS0_6Logger5LevelENSt3__112basic_stringIcNS
 __ZThn8_N5realm4util12StderrLoggerD1Ev
 __ZThn8_N5realm4util12StderrLoggerD0Ev
 __ZThn8_N5realm4util12StderrLogger6do_logENS0_6Logger5LevelENSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE
+__ZNSt3__120__shared_ptr_emplaceIN5realm5_impl10SyncClientENS_9allocatorIS3_EEED1Ev
+__ZNSt3__120__shared_ptr_emplaceIN5realm5_impl10SyncClientENS_9allocatorIS3_EEED0Ev
 __ZN5realm5_impl10SyncClientC2ENSt3__110unique_ptrINS_4util6LoggerENS2_14default_deleteIS5_EEEENS2_8functionIFviNS2_12basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEEEENS_4sync6Client9ReconnectEb
 __ZN5realm5_impl10SyncClient11make_clientERNS_4util6LoggerENS_4sync6Client9ReconnectEb
 __ZNSt3__16threadC2IZN5realm5_impl10SyncClientC1ENS_10unique_ptrINS2_4util6LoggerENS_14default_deleteIS7_EEEENS_8functionIFviNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEENS2_4sync6Client9ReconnectEbEUlvE_JEvEEOT_DpOT0_
 __ZNSt3__114__thread_proxyINS_5tupleIJZN5realm5_impl10SyncClientC1ENS_10unique_ptrINS2_4util6LoggerENS_14default_deleteIS7_EEEENS_8functionIFviNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEENS2_4sync6Client9ReconnectEbEUlvE_EEEEEPvSP_
+__ZN5realm5_impl10SyncClientD2Ev
 __ZZN5realm11SyncManager6sharedEvE7manager
 __ZGVZN5realm11SyncManager6sharedEvE7manager
 __ZTSNSt3__120__shared_ptr_emplaceIN5realm8SyncUserENS_9allocatorIS2_EEEE
@@ -6961,12 +6923,15 @@ __ZTINSt3__120__shared_ptr_pointerIPN5realm11SyncSessionEZNS1_11SyncManager11get
 __ZTSZN5realm11SyncManager11get_sessionERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEERKNS_10SyncConfigEE3$_2
 __ZTSN5realm4util12StderrLoggerE
 __ZTIN5realm4util12StderrLoggerE
+__ZTSNSt3__120__shared_ptr_emplaceIN5realm5_impl10SyncClientENS_9allocatorIS3_EEEE
+__ZTINSt3__120__shared_ptr_emplaceIN5realm5_impl10SyncClientENS_9allocatorIS3_EEEE
 /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp
+~SyncClient
+Realm/ObjectStore/src/sync/impl/sync_client.hpp
 __thread_proxy<std::__1::tuple<(lambda at Realm/ObjectStore/src/sync/impl/sync_client.hpp:40:16)> >
 ~tuple
 ~__tuple_impl
 ~__tuple_leaf
-Realm/ObjectStore/src/sync/impl/sync_client.hpp
 __thread_execute<(lambda at Realm/ObjectStore/src/sync/impl/sync_client.hpp:40:16)>
 __invoke<(lambda at Realm/ObjectStore/src/sync/impl/sync_client.hpp:40:16)>
 thread<(lambda at Realm/ObjectStore/src/sync/impl/sync_client.hpp:40:16), void>
@@ -6978,6 +6943,10 @@ _ZZN5realm5_impl10SyncClientC1ENSt3__110unique_ptrINS_4util6LoggerENS2_14default
 __decay_copy<(lambda at Realm/ObjectStore/src/sync/impl/sync_client.hpp:40:16)>
 make_client
 SyncClient
+make_shared<std::__1::unique_ptr<realm::util::Logger, std::__1::default_delete<realm::util::Logger> >, const std::__1::function<void (int, std::__1::basic_string<char>)>, const realm::sync::Client::Reconnect &, const bool &>
+__shared_ptr_emplace<std::__1::unique_ptr<realm::util::Logger, std::__1::default_delete<realm::util::Logger> >, const std::__1::function<void (int, std::__1::basic_string<char>)>, const realm::sync::Client::Reconnect &, const bool &>
+__compressed_pair<std::__1::allocator<realm::_impl::SyncClient> &, std::__1::unique_ptr<realm::util::Logger, std::__1::default_delete<realm::util::Logger> > &&, const std::__1::function<void (int, std::__1::basic_string<char>)> &&, const realm::sync::Client::Reconnect &, const bool &>
+__libcpp_compressed_pair_imp<std::__1::allocator<realm::_impl::SyncClient> &, std::__1::unique_ptr<realm::util::Logger, std::__1::default_delete<realm::util::Logger> > &&, const std::__1::function<void (int, std::__1::basic_string<char>)> &&, const realm::sync::Client::Reconnect &, const bool &, 0, 0, 1, 2, 3>
 _ZThn8_N5realm4util12StderrLogger6do_logENS0_6Logger5LevelENSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE
 operator<<<char, std::__1::char_traits<char>, std::__1::allocator<char> >
 _ZThn8_N5realm4util12StderrLoggerD0Ev
@@ -6992,7 +6961,6 @@ __get_deleter
 ~SyncSession
 destroy<std::__1::pair<const std::__1::basic_string<char>, std::__1::unique_ptr<realm::SyncSession, std::__1::default_delete<realm::SyncSession> > > >
 __destroy<std::__1::pair<const std::__1::basic_string<char>, std::__1::unique_ptr<realm::SyncSession, std::__1::default_delete<realm::SyncSession> > > >
-__hash_const_iterator
 __emplace_back_slow_path<std::__1::shared_ptr<realm::SyncUser> >
 construct<std::__1::shared_ptr<realm::SyncUser>, std::__1::shared_ptr<realm::SyncUser> >
 __construct<std::__1::shared_ptr<realm::SyncUser>, std::__1::shared_ptr<realm::SyncUser> >
@@ -7002,14 +6970,14 @@ make_shared<std::__1::basic_string<char>, const std::__1::basic_string<char> &, 
 __shared_ptr_emplace<std::__1::basic_string<char>, const std::__1::basic_string<char> &, realm::util::Optional<std::__1::basic_string<char> > &, bool &>
 __compressed_pair<std::__1::allocator<realm::SyncUser> &, std::__1::basic_string<char> &&, const std::__1::basic_string<char> &, realm::util::Optional<std::__1::basic_string<char> > &, bool &>
 __libcpp_compressed_pair_imp<std::__1::allocator<realm::SyncUser> &, std::__1::basic_string<char> &&, const std::__1::basic_string<char> &, realm::util::Optional<std::__1::basic_string<char> > &, bool &, 0, 0, 1, 2, 3>
-__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28) &, int, std::__1::basic_string<char> >
-__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28) &, int, std::__1::basic_string<char> >
-__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28)> &>
-__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28)> &, 0, 0>
+__call<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28) &, int, std::__1::basic_string<char> >
+__invoke<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28) &, int, std::__1::basic_string<char> >
+__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28)> &>
+__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28) &, const std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28)> &, 0, 0>
 _ZZN5realm11SyncManager17set_error_handlerENSt3__18functionIFviNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEEEEN3$_1C1ERKSB_
 _ZZN5realm11SyncManager17set_error_handlerENSt3__18functionIFviNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEEEEN3$_1C2ERKSB_
-__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28)> &&>
-__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28)> &&, 0, 0>
+__compressed_pair<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28)> &&>
+__libcpp_compressed_pair_imp<const (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28) &, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28)> &&, 0, 0>
 swap<std::__1::__function::__base<void (int, std::__1::basic_string<char>)> *>
 destroy<std::__1::pair<const std::__1::basic_string<char>, std::__1::shared_ptr<realm::SyncUser> > >
 __destroy<std::__1::pair<const std::__1::basic_string<char>, std::__1::shared_ptr<realm::SyncUser> > >
@@ -7033,9 +7001,8 @@ __construct_backward<realm::SyncUserMetadata *>
 destroy<UserCreationData>
 __destroy<UserCreationData>
 ~UserCreationData
-~SyncClient
 create_sync_client
-make_unique<realm::_impl::SyncClient, std::__1::unique_ptr<realm::util::Logger, std::__1::default_delete<realm::util::Logger> >, const std::__1::function<void (int, std::__1::basic_string<char>)>, const realm::sync::Client::Reconnect &, const bool &>
+make_shared<realm::_impl::SyncClient, std::__1::unique_ptr<realm::util::Logger, std::__1::default_delete<realm::util::Logger> >, const std::__1::function<void (int, std::__1::basic_string<char>)>, const realm::sync::Client::Reconnect &, const bool &>
 operator=<realm::util::StderrLogger, std::__1::default_delete<realm::util::StderrLogger> >
 make_unique<realm::util::StderrLogger>
 StderrLogger
@@ -7043,8 +7010,9 @@ unregister_session
 __count_unique<std::__1::basic_string<char> >
 dropped_last_reference_to_session
 get_sync_client
+swap<realm::_impl::SyncClient *>
 get_session
-shared_ptr<realm::SyncSession, (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:365:28)>
+shared_ptr<realm::SyncSession, (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:342:28)>
 __enable_weak_this<realm::SyncSession, realm::SyncSession>
 __shared_ptr_pointer
 get_existing_inactive_session_locked
@@ -7065,18 +7033,16 @@ client_should_validate_ssl
 set_client_should_validate_ssl
 client_should_reconnect_immediately
 set_client_should_reconnect_immediately
-operator=<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28)>
-function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28)>
-__compressed_pair<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28)> &&>
-__libcpp_compressed_pair_imp<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:197:28)> &&, 0, 0>
+operator=<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28)>
+function<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28)>
+__compressed_pair<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28)> &&>
+__libcpp_compressed_pair_imp<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28) &&, std::__1::allocator<(lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:174:28)> &&, 0, 0>
 _ZZN5realm11SyncManager17set_error_handlerENSt3__18functionIFviNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEEEEN3$_1C1EOSB_
 _ZZN5realm11SyncManager17set_error_handlerENSt3__18functionIFviNS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEEEEN3$_1C2EOSB_
 set_logger_factory
 set_log_level
-stop
-joinable
 reset_for_testing
-all_of<std::__1::__hash_map_iterator<std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char>, std::__1::weak_ptr<realm::SyncSession> >, void *> *> >, (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:156:103)>
+all_of<std::__1::__hash_map_iterator<std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char>, std::__1::weak_ptr<realm::SyncSession> >, void *> *> >, (lambda at /Users/realm/workspace/Package iOS Swift/tightdb_objc/Realm/ObjectStore/src/sync/sync_manager.cpp:145:9)>
 operator()<std::__1::pair<const std::__1::basic_string<char>, std::__1::weak_ptr<realm::SyncSession> > >
 ~SyncMetadataManager
 ~SyncFileManager
@@ -8071,8 +8037,6 @@ __ZTINSt3__110__function6__funcIZN12_GLOBAL__N_19WebSocket17async_write_frameEbi
 __ZTSZN12_GLOBAL__N_19WebSocket17async_write_frameEbiPKcmNSt3__18functionIFvvEEEEUlNS3_10error_codeEmE_
 __ZTIZN12_GLOBAL__N_19WebSocket17async_write_frameEbiPKcmNSt3__18functionIFvvEEEEUlNS3_10error_codeEmE_
 __ZN12_GLOBAL__N_118InstructionEmitter7EmitterclERKN5realm5_impl5InstrILNS3_9InstrTypeE12EEENS3_11InstructionEm
-__ZN5realm5_impl18TransactLogEncoder7set_intEmmxNS0_11InstructionEm
-__ZN5realm5_impl18TransactLogEncoder13set_timestampEmmNS_9TimestampENS0_11InstructionE
 __ZN5realm5_impl17TransactLogParser9parse_oneIN12_GLOBAL__N_118InstructionBuilderEEEvRT_
 __ZN12_GLOBAL__N_118InstructionBuilder9build_setIN5realm5_impl5InstrILNS3_9InstrTypeE12EE7Payload11LinkPayloadEEEbmmT_NS3_11InstructionEm
 __ZN12_GLOBAL__N_118InstructionBuilder11parse_errorEPKc
@@ -8138,7 +8102,6 @@ __ZTIN5realm4sync14TransformErrorE
 __ZTVN12_GLOBAL__N_115TransformerImpl21ReciprocalInputStreamE
 __ZTSN12_GLOBAL__N_115TransformerImpl21ReciprocalInputStreamE
 __ZTIN12_GLOBAL__N_115TransformerImpl21ReciprocalInputStreamE
-__ZN5realm18TrivialReplication20transact_log_reserveEmPPcS2_
 __ZN12_GLOBAL__N_111HistoryImpl10initializeERN5realm11SharedGroupE
 __ZN12_GLOBAL__N_111HistoryImpl16initiate_sessionEy
 __ZN12_GLOBAL__N_111HistoryImpl17terminate_sessionEv
@@ -8176,17 +8139,12 @@ __ZThn128_NK12_GLOBAL__N_111HistoryImpl25read_reciprocal_transformEyymPcm
 __ZThn128_N12_GLOBAL__N_111HistoryImpl26write_reciprocal_transformEyymmPKcm
 __ZThn128_N12_GLOBAL__N_111HistoryImplD1Ev
 __ZThn128_N12_GLOBAL__N_111HistoryImplD0Ev
-__ZNK5realm11Replication13is_sync_agentEv
-__ZN5realm11ReplicationD1Ev
-__ZN5realm11ReplicationD0Ev
 __ZNK12_GLOBAL__N_111HistoryImpl15update_from_refEmy
 __ZN12_GLOBAL__N_111HistoryImpl17prepare_for_writeEv
 __ZN12_GLOBAL__N_111HistoryImpl9add_entryEN5realm4sync12HistoryEntryE
 __ZN12_GLOBAL__N_111HistoryImpl20update_sync_progressEN5realm4sync12SyncProgressE
 __ZN12_GLOBAL__N_111HistoryImpl12trim_historyEv
 __ZNK12_GLOBAL__N_111HistoryImpl21do_find_history_entryEyyybRN5realm4sync12HistoryEntryE
-__ZNK5realm12BinaryColumn3getEm
-__ZNK5realm11ArrayBinary3getEm
 __ZTVN12_GLOBAL__N_111HistoryImplE
 __ZTSN12_GLOBAL__N_111HistoryImplE
 __ZTSN5realm4sync11SyncHistoryE
@@ -8265,6 +8223,7 @@ __ZN5realm4util7network3ssl6Stream13HandshakeOperIZN12_GLOBAL__N_110Connection22
 __ZN5realm4util7network3ssl6Stream13HandshakeOperIZN12_GLOBAL__N_110Connection22initiate_ssl_handshakeEvEUlNSt3__110error_codeEE_ED0Ev
 __ZN12_GLOBAL__N_110Connection5closeEv
 __ZNSt3__16__treeINS_12__value_typeItN5realm4util8bind_ptrIN12_GLOBAL__N_111SessionImplEEEEENS_19__map_value_compareItS8_NS_4lessItEELb1EEENS_9allocatorIS8_EEE7destroyEPNS_11__tree_nodeIS8_PvEE
+__ZN12_GLOBAL__N_110Connection23handle_message_receivedEPKcm
 __ZNSt3__110__function6__funcIZN12_GLOBAL__N_110Connection29initiate_write_client_messageEvEUlvE_NS_9allocatorIS4_EEFvvEED1Ev
 __ZNSt3__110__function6__funcIZN12_GLOBAL__N_110Connection29initiate_write_client_messageEvEUlvE_NS_9allocatorIS4_EEFvvEED0Ev
 __ZNKSt3__110__function6__funcIZN12_GLOBAL__N_110Connection29initiate_write_client_messageEvEUlvE_NS_9allocatorIS4_EEFvvEE7__cloneEv
@@ -8396,9 +8355,6 @@ __ZTIN5realm4util7network7Service8PostOperIZN12_GLOBAL__N_111SessionImpl44wait_f
 __ZTVN5realm4util7network7Service8PostOperIZN12_GLOBAL__N_111SessionImpl14async_wait_forEbbNSt3__18functionIFvNS6_10error_codeEEEEE3$_6EE
 __ZTSN5realm4util7network7Service8PostOperIZN12_GLOBAL__N_111SessionImpl14async_wait_forEbbNSt3__18functionIFvNS6_10error_codeEEEEE3$_6EE
 __ZTIN5realm4util7network7Service8PostOperIZN12_GLOBAL__N_111SessionImpl14async_wait_forEbbNSt3__18functionIFvNS6_10error_codeEEEEE3$_6EE
-__ZN5realm4util16DecryptionFailedD1Ev
-__ZN5realm4util16DecryptionFailedC2Ev
-__ZN5realm4util16DecryptionFailedD0Ev
 __ZTSN5realm4util16DecryptionFailedE
 __ZTIN5realm4util16DecryptionFailedE
 __ZN12_GLOBAL__N_113misc_categoryD1Ev
@@ -8419,18 +8375,9 @@ __ZTVN12_GLOBAL__N_115system_categoryE
 __ZN12_GLOBAL__N_117g_system_categoryE
 __ZTSN12_GLOBAL__N_115system_categoryE
 __ZTIN12_GLOBAL__N_115system_categoryE
-__ZN5realm4util4File6ExistsD1Ev
-__ZN5realm4util4File8NotFoundD1Ev
-__ZN5realm4util4File6ExistsD0Ev
-__ZN5realm4util4File8NotFoundD0Ev
 __GLOBAL__sub_I_file.cpp
 __ZN12_GLOBAL__N_116cached_page_sizeE
-__ZN5realm21AddressSpaceExhaustedD1Ev
-__ZN5realm4util9SharedPtrINS0_14SharedFileInfoEE4initEPS2_
-__ZN5realm21AddressSpaceExhaustedD0Ev
 __GLOBAL__sub_I_file_mapper.cpp
-__ZN5realm4util20MemoryInputStreambufD1Ev
-__ZN5realm4util20MemoryInputStreambufD0Ev
 __ZN5realm4utilL18terminate_internalERNSt3__118basic_stringstreamIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
 __ZN12_GLOBAL__N_15nslogEPKc
 __ZN12_GLOBAL__N_133termination_notification_callbackE
@@ -8443,8 +8390,6 @@ __ZN12_GLOBAL__N_116DefaultAllocator8do_allocEm
 __ZN12_GLOBAL__N_116DefaultAllocator10do_reallocEmPKcmm
 __ZN12_GLOBAL__N_116DefaultAllocator7do_freeEmPKc
 __ZNK12_GLOBAL__N_116DefaultAllocator12do_translateEm
-__ZN5realm9AllocatorD1Ev
-__ZN5realm9AllocatorD0Ev
 __GLOBAL__sub_I_alloc.cpp
 __ZN12_GLOBAL__N_113default_allocE
 __ZTVN12_GLOBAL__N_116DefaultAllocatorE
@@ -8453,20 +8398,11 @@ __ZTSN5realm9AllocatorE
 __ZTIN5realm9AllocatorE
 __ZTIN12_GLOBAL__N_116DefaultAllocatorE
 __ZN12_GLOBAL__N_116InvalidFreeSpaceD1Ev
-__ZN5realm5Array25get_byte_size_from_headerEPKc
-__ZN5realm4util23encryption_read_barrierEPKvmPNS0_20EncryptedFileMappingEPFmPKcE
-__ZN5realm15InvalidDatabaseD1Ev
 __ZN12_GLOBAL__N_116InvalidFreeSpaceD0Ev
 __ZNK12_GLOBAL__N_116InvalidFreeSpace4whatEv
-__ZN5realm15InvalidDatabaseD0Ev
 __ZNSt3__16__sortIRZN5realm9SlabAlloc26consolidate_free_read_onlyEvE3$_0PNS2_5ChunkEEEvT0_S7_T_
 __ZNSt3__17__sort4IRZN5realm9SlabAlloc26consolidate_free_read_onlyEvE3$_0PNS2_5ChunkEEEjT0_S7_S7_S7_T_
 __ZNSt3__127__insertion_sort_incompleteIRZN5realm9SlabAlloc26consolidate_free_read_onlyEvE3$_0PNS2_5ChunkEEEbT0_S7_T_
-__ZNSt3__120__shared_ptr_emplaceIN5realm9SlabAlloc10MappedFileENS_9allocatorIS3_EEED1Ev
-__ZNSt3__120__shared_ptr_emplaceIN5realm9SlabAlloc10MappedFileENS_9allocatorIS3_EEED0Ev
-__ZN5realm9SlabAlloc10MappedFileD2Ev
-__ZNSt3__120__shared_ptr_emplaceIKN5realm4util4File3MapIcEENS_9allocatorIS6_EEED1Ev
-__ZNSt3__120__shared_ptr_emplaceIKN5realm4util4File3MapIcEENS_9allocatorIS6_EEED0Ev
 __GLOBAL__sub_I_alloc_slab.cpp
 __ZTSN12_GLOBAL__N_116InvalidFreeSpaceE
 __ZTIN12_GLOBAL__N_116InvalidFreeSpaceE
@@ -8481,16 +8417,6 @@ __ZTSNSt3__120__shared_ptr_emplaceIN5realm9SlabAlloc10MappedFileENS_9allocatorIS
 __ZTINSt3__120__shared_ptr_emplaceIN5realm9SlabAlloc10MappedFileENS_9allocatorIS3_EEEE
 __ZTSNSt3__120__shared_ptr_emplaceIKN5realm4util4File3MapIcEENS_9allocatorIS6_EEEE
 __ZTINSt3__120__shared_ptr_emplaceIKN5realm4util4File3MapIcEENS_9allocatorIS6_EEEE
-__ZN5realm5ArrayD1Ev
-__ZN5realm5Array12destroy_deepEmRNS_9AllocatorE
-__ZNK5realm5Array4findINS_5EqualEEEbNS_6ActionExmmmPNS_10QueryStateIxEEbb
-__ZNK5realm5Array4findINS_8NotEqualEEEbNS_6ActionExmmmPNS_10QueryStateIxEEbb
-__ZNK5realm5Array4findINS_7GreaterEEEbNS_6ActionExmmmPNS_10QueryStateIxEEbb
-__ZNK5realm5Array4findINS_4LessEEEbNS_6ActionExmmmPNS_10QueryStateIxEEbb
-__ZNK5realm5Array4findINS_4NoneEEEbNS_6ActionExmmmPNS_10QueryStateIxEEbb
-__ZNK5realm5Array4findINS_7NotNullEEEbNS_6ActionExmmmPNS_10QueryStateIxEEbb
-__ZN5realm9get_threeEPKcmmRmS2_S2_
-__ZN5realm5ArrayD0Ev
 ___cxx_global_var_init
 ___cxx_global_var_init.26
 ___cxx_global_var_init.27
@@ -8499,87 +8425,18 @@ ___cxx_global_var_init.29
 ___cxx_global_var_init.30
 ___cxx_global_var_init.31
 ___cxx_global_var_init.32
-__ZN5realm5Array12destroy_deepEv
-__ZN5realm14QueryStateBase7dyncastEv
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE0ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE0ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE5ELm16EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE5ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE5ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE5ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE5ELm8EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE1ELm16EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE1ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE1ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE1ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE1ELm8EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE3ELm16EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE3ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE3ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE3ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE3ELm8EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE2ELm16EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE2ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE2ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE2ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE2ELm8EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE4ELm16EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE4ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE4ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE4ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE4ELm8EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE1ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE1ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE1ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE3ELm16EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE3ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE3ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE3ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE3ELm8EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE2ELm16EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE2ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE2ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE2ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE2ELm8EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE4ELm16EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE4ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE4ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE4ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE4ELm8EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE5ELm16EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE5ELm1EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE5ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE5ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE5ELm8EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm2EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm4EPFbxEEEbxmmmPNS_10QueryStateIxEET2_
 __ZZN5realm5Array9bit_widthExE4bits
 __ZZNK5realm5Array13first_set_bitEjE27MultiplyDeBruijnBitPosition
 __ZTSN5realm10QueryStateIxEE
 __ZTSN5realm14QueryStateBaseE
 __ZTIN5realm14QueryStateBaseE
 __ZTIN5realm10QueryStateIxEE
-__ZN5realm11ArrayBinaryD1Ev
-__ZN5realm11ArrayBinaryD0Ev
-__ZN5realm9ArrayBlobD1Ev
-__ZN5realm9ArrayBlobD0Ev
-__ZNK5realm9ArrayBlob13calc_byte_lenEmm
-__ZNK5realm9ArrayBlob15calc_item_countEmm
 __ZTSN5realm11ArrayBinaryE
 __ZTIN5realm11ArrayBinaryE
 __ZTSN5realm9ArrayBlobE
 __ZTIN5realm9ArrayBlobE
-__ZN5realm13ArrayBigBlobsD1Ev
-__ZN5realm13ArrayBigBlobsD0Ev
 __ZTSN5realm13ArrayBigBlobsE
 __ZTIN5realm13ArrayBigBlobsE
-__ZN5realm11ArrayStringD1Ev
-__ZN5realm11ArrayStringD0Ev
-__ZN5realm15ArrayStringLongD1Ev
-__ZN5realm15ArrayStringLongD0Ev
 __ZTSN5realm15ArrayStringLongE
 __ZTIN5realm15ArrayStringLongE
 __ZN12_GLOBAL__N_129destroy_singlet_bptree_branchEN5realm6MemRefERNS0_9AllocatorERNS0_10BpTreeNode12EraseHandlerE
@@ -8587,11 +8444,8 @@ __ZN12_GLOBAL__N_112ArrayOffsetsD1Ev
 __ZN12_GLOBAL__N_119foreach_bptree_leafINS_12VisitAdapterEEEbRN5realm5ArrayEmmT_m
 __ZN12_GLOBAL__N_130simplified_foreach_bptree_leafINS_13UpdateAdapterEEEvRN5realm5ArrayET_
 __ZN12_GLOBAL__N_128elim_superfluous_bptree_rootEPN5realm5ArrayENS0_6MemRefExmRNS0_10BpTreeNode12EraseHandlerE
-__ZN5realm10BpTreeBase17WriteSliceHandlerD1Ev
 __ZN12_GLOBAL__N_112ArrayOffsetsD0Ev
 __ZN12_GLOBAL__N_117find_bptree_childExmRKN5realm9AllocatorE
-__ZN5realm10BpTreeBase17WriteSliceHandler5visitERKNS_10BpTreeNode8NodeInfoE
-__ZN5realm10BpTreeBase17WriteSliceHandlerD0Ev
 __ZN12_GLOBAL__N_110TreeWriter11ParentLevel13add_child_refEmmbPm
 __ZN12_GLOBAL__N_110TreeWriter11ParentLevelD2Ev
 __ZTVN12_GLOBAL__N_112ArrayOffsetsE
@@ -8601,49 +8455,6 @@ __ZTSN5realm10BpTreeBase17WriteSliceHandlerE
 __ZTSN5realm10BpTreeNode12VisitHandlerE
 __ZTIN5realm10BpTreeNode12VisitHandlerE
 __ZTIN5realm10BpTreeBase17WriteSliceHandlerE
-__ZNK5realm16ColumnBaseSimple9get_allocEv
-__ZN5realm10ColumnBaseD1Ev
-__ZN5realm10ColumnBaseD0Ev
-__ZNK5realm10ColumnBase21supports_search_indexEv
-__ZNK5realm10ColumnBase16has_search_indexEv
-__ZN5realm10ColumnBase19create_search_indexEv
-__ZN5realm10ColumnBase20destroy_search_indexEv
-__ZNK5realm10ColumnBase16get_search_indexEv
-__ZN5realm10ColumnBase16get_search_indexEv
-__ZN5realm10ColumnBase20set_search_index_refEmPNS_11ArrayParentEmb
-__ZN5realm16ColumnBaseSimple7destroyEv
-__ZN5realm16ColumnBaseSimpleD1Ev
-__ZN5realm16ColumnBaseSimpleD0Ev
-__ZNK5realm16ColumnBaseSimple7get_refEv
-__ZNK5realm16ColumnBaseSimple7get_memEv
-__ZNK5realm16ColumnBaseSimple10clone_deepERNS_9AllocatorE
-__ZN5realm16ColumnBaseSimple6detachEv
-__ZNK5realm16ColumnBaseSimple11is_attachedEv
-__ZN5realm16ColumnBaseSimple10set_parentEPNS_11ArrayParentEm
-__ZNK5realm16ColumnBaseSimple17get_ndx_in_parentEv
-__ZN5realm16ColumnBaseSimple17set_ndx_in_parentEm
-__ZN5realm16ColumnBaseSimple18update_from_parentEm
-__ZN5realm19ColumnBaseWithIndexD1Ev
-__ZN5realm19ColumnBaseWithIndexD0Ev
-__ZNK5realm19ColumnBaseWithIndex21supports_search_indexEv
-__ZN5realm10IndexArrayD1Ev
-__ZN5realm10IndexArrayD0Ev
-__ZN5realm6ColumnINS_4util8OptionalIxEEE17get_size_from_refEmRNS_9AllocatorE
-__ZNK5realm6ColumnINS_4util8OptionalIxEEE21supports_search_indexEv
-__ZN5realm6ColumnINS_4util8OptionalIxEEE18replace_root_arrayENSt3__110unique_ptrINS_5ArrayENS5_14default_deleteIS7_EEEE
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE14SetNullHandlerD1Ev
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE14SetNullHandler6updateENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE14SetNullHandlerD0Ev
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE12EraseHandlerD1Ev
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE12EraseHandler15erase_leaf_elemENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE12EraseHandler12destroy_leafENS_6MemRefE
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE12EraseHandler20replace_root_by_leafENS_6MemRefE
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE12EraseHandler26replace_root_by_empty_leafEv
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE12EraseHandlerD0Ev
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE13UpdateHandlerD1Ev
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE13UpdateHandler6updateENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE13UpdateHandlerD0Ev
-__ZN5realm6BpTreeINS_4util8OptionalIxEEE12SliceHandler10slice_leafENS_6MemRefEmmRNS_9AllocatorE
 __ZTSN5realm10IndexArrayE
 __ZTIN5realm10IndexArrayE
 __ZTSN5realm6ColumnINS_4util8OptionalIxEEEE
@@ -8656,42 +8467,9 @@ __ZTSN5realm6BpTreeINS_4util8OptionalIxEEE13UpdateHandlerE
 __ZTIN5realm6BpTreeINS_4util8OptionalIxEEE13UpdateHandlerE
 __ZTSN5realm6BpTreeINS_4util8OptionalIxEEE12SliceHandlerE
 __ZTIN5realm6BpTreeINS_4util8OptionalIxEEE12SliceHandlerE
-__ZN5realm14BacklinkColumnD1Ev
-__ZN5realm14BacklinkColumnD0Ev
-__ZN5realm14BacklinkColumn19adj_acc_insert_rowsEmm
-__ZN5realm14BacklinkColumn17adj_acc_erase_rowEm
-__ZN5realm14BacklinkColumn17adj_acc_move_overEmm
-__ZN5realm14BacklinkColumn17adj_acc_swap_rowsEmm
-__ZN5realm14BacklinkColumn24adj_acc_clear_root_tableEv
-__ZN5realm14BacklinkColumn4markEi
-__ZN5realm14BacklinkColumn30bump_link_origin_table_versionEv
-__ZThn32_N5realm14BacklinkColumnD1Ev
-__ZThn32_N5realm14BacklinkColumnD0Ev
-__ZNK5realm5Table12bump_versionEb
-__ZNK5realm12BinaryColumn4sizeEv
 __ZN12_GLOBAL__N_111SetLeafElemD1Ev
-__ZN5realm12BinaryColumn13EraseLeafElemD1Ev
-__ZN5realm12BinaryColumn10set_stringEmNS_10StringDataE
-__ZNK5realm12BinaryColumn11is_nullableEv
-__ZNK5realm12BinaryColumn7is_nullEm
-__ZN5realm12BinaryColumn8set_nullEm
-__ZN5realm12BinaryColumn11insert_rowsEmmmb
-__ZN5realm12BinaryColumn10erase_rowsEmmmb
-__ZN5realm12BinaryColumn18move_last_row_overEmmb
-__ZN5realm12BinaryColumn5clearEmb
-__ZN5realm12BinaryColumnD1Ev
-__ZN5realm12BinaryColumnD0Ev
-__ZNK5realm12BinaryColumn14get_index_dataEmRNSt3__15arrayIcLm12EEE
-__ZN5realm12BinaryColumn18update_from_parentEm
 __ZN12_GLOBAL__N_111SetLeafElem6updateEN5realm6MemRefEPNS1_11ArrayParentEmm
 __ZN12_GLOBAL__N_111SetLeafElemD0Ev
-__ZN5realm12BinaryColumn13EraseLeafElem15erase_leaf_elemENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm12BinaryColumn13EraseLeafElem12destroy_leafENS_6MemRefE
-__ZN5realm12BinaryColumn13EraseLeafElem20replace_root_by_leafENS_6MemRefE
-__ZN5realm12BinaryColumn13EraseLeafElem26replace_root_by_empty_leafEv
-__ZN5realm12BinaryColumn13EraseLeafElemD0Ev
-__ZN5realm12BinaryColumn13CreateHandler11create_leafEm
-__ZN5realm12BinaryColumn12SliceHandler10slice_leafENS_6MemRefEmmRNS_9AllocatorE
 __ZTVN12_GLOBAL__N_111SetLeafElemE
 __ZTSN12_GLOBAL__N_111SetLeafElemE
 __ZTIN12_GLOBAL__N_111SetLeafElemE
@@ -8701,191 +8479,20 @@ __ZTSN5realm12BinaryColumn13CreateHandlerE
 __ZTIN5realm12BinaryColumn13CreateHandlerE
 __ZTSN5realm12BinaryColumn12SliceHandlerE
 __ZTIN5realm12BinaryColumn12SliceHandlerE
-__ZNK5realm10LinkColumn11is_nullableEv
-__ZNK5realm10LinkColumn7is_nullEm
-__ZN5realm10LinkColumn8set_nullEm
-__ZN5realm10LinkColumnD1Ev
-__ZN5realm10LinkColumnD0Ev
-__ZNK5realm14LinkColumnBase21supports_search_indexEv
-__ZN5realm14LinkColumnBase19create_search_indexEv
-__ZN5realm14LinkColumnBase19adj_acc_insert_rowsEmm
-__ZN5realm14LinkColumnBase17adj_acc_erase_rowEm
-__ZN5realm14LinkColumnBase17adj_acc_move_overEmm
-__ZN5realm14LinkColumnBase17adj_acc_swap_rowsEmm
-__ZN5realm14LinkColumnBase24adj_acc_clear_root_tableEv
-__ZN5realm14LinkColumnBase4markEi
-__ZN5realm14LinkColumnBase30bump_link_origin_table_versionEv
-__ZN5realm10LinkColumn14do_update_linkEmmm
-__ZN5realm10LinkColumn12do_swap_linkEmmm
-__ZN5realm14LinkColumnBaseD1Ev
-__ZN5realm14LinkColumnBaseD0Ev
-__ZNK5realm14LinkListColumn11is_nullableEv
-__ZNK5realm14LinkListColumn7is_nullEm
-__ZN5realm14LinkListColumn8set_nullEm
-__ZN5realm14LinkListColumnD1Ev
-__ZN5realm14LinkListColumnD0Ev
-__ZN5realm14LinkListColumn26do_discard_child_accessorsEv
-__ZThn64_N5realm14LinkListColumnD1Ev
-__ZThn64_N5realm14LinkListColumnD0Ev
-__ZNSt3__120__shared_ptr_emplaceIN5realm8LinkViewENS_9allocatorIS2_EEED1Ev
-__ZNSt3__120__shared_ptr_emplaceIN5realm8LinkViewENS_9allocatorIS2_EEED0Ev
-__ZN5realm8LinkViewC2ERKNS0_11ctor_cookieEPNS_5TableERNS_14LinkListColumnEm
 __ZTSNSt3__120__shared_ptr_emplaceIN5realm8LinkViewENS_9allocatorIS2_EEEE
 __ZTINSt3__120__shared_ptr_emplaceIN5realm8LinkViewENS_9allocatorIS2_EEEE
-__ZNK5realm11MixedColumn4sizeEv
-__ZNK5realm11MixedColumn7get_intEm
-__ZNK5realm11MixedColumn8get_boolEm
-__ZNK5realm11MixedColumn15get_olddatetimeEm
-__ZNK5realm11MixedColumn13get_timestampEm
-__ZNK5realm11MixedColumn9get_floatEm
-__ZNK5realm11MixedColumn10get_doubleEm
-__ZNK5realm11MixedColumn10get_stringEm
-__ZNK5realm11MixedColumn10get_binaryEm
-__ZN5realm11MixedColumn11insert_rowsEmmmb
-__ZN5realm11MixedColumn10erase_rowsEmmmb
-__ZN5realm11MixedColumn18move_last_row_overEmmb
-__ZN5realm11MixedColumn5clearEmb
-__ZN5realm11MixedColumn9swap_rowsEmm
-__ZNK5realm11MixedColumn14get_index_dataEmRNSt3__15arrayIcLm12EEE
-__ZNK5realm11MixedColumn21get_subtable_accessorEm
-__ZN5realm11MixedColumn25discard_subtable_accessorEm
-__ZN5realm11MixedColumn19adj_acc_insert_rowsEmm
-__ZN5realm11MixedColumn17adj_acc_erase_rowEm
-__ZN5realm11MixedColumn17adj_acc_move_overEmm
-__ZN5realm11MixedColumn17adj_acc_swap_rowsEmm
-__ZN5realm11MixedColumn24adj_acc_clear_root_tableEv
-__ZN5realm11MixedColumn4markEi
-__ZN5realm11MixedColumn21refresh_accessor_treeEmRKNS_4SpecE
-__ZN5realm18SubtableColumnBase11insert_rowsEmmmb
-__ZN5realm18SubtableColumnBase10erase_rowsEmmmb
-__ZN5realm18SubtableColumnBase18move_last_row_overEmmb
-__ZN5realm18SubtableColumnBase5clearEmb
-__ZN5realm18SubtableColumnBase9swap_rowsEmm
-__ZNK5realm18SubtableColumnBase21supports_search_indexEv
-__ZN5realm18SubtableColumnBase19create_search_indexEv
-__ZNK5realm18SubtableColumnBase21get_subtable_accessorEm
-__ZN5realm18SubtableColumnBase25discard_subtable_accessorEm
-__ZN5realm18SubtableColumnBase19adj_acc_insert_rowsEmm
-__ZN5realm18SubtableColumnBase17adj_acc_erase_rowEm
-__ZN5realm18SubtableColumnBase17adj_acc_move_overEmm
-__ZN5realm18SubtableColumnBase17adj_acc_swap_rowsEmm
-__ZN5realm18SubtableColumnBase24adj_acc_clear_root_tableEv
-__ZN5realm18SubtableColumnBase4markEi
-__ZN5realm11MixedColumn10RefsColumn21refresh_accessor_treeEmRKNS_4SpecE
-__ZN5realm18SubtableColumnBase16update_child_refEmm
-__ZNK5realm18SubtableColumnBase13get_child_refEm
-__ZN5realm18SubtableColumnBase20record_subtable_pathEPmS1_
-__ZThn32_N5realm18SubtableColumnBase16update_child_refEmm
-__ZThn32_NK5realm18SubtableColumnBase13get_child_refEm
-__ZThn32_N5realm18SubtableColumnBase20record_subtable_pathEPmS1_
-__ZN5realm5_impl11TableFriend20record_subtable_pathERKNS_5TableEPmS5_
-__ZNK5realm11ArrayString3getEm
-__ZNK5realm15ArrayStringLong3getEm
-__ZNK5realm12StringColumn4sizeEv
-__ZN5realm12StringColumn13EraseLeafElemD1Ev
-__ZN5realm12StringColumn10set_stringEmNS_10StringDataE
-__ZN5realm12StringColumn11insert_rowsEmmmb
-__ZN5realm12StringColumn10erase_rowsEmmmb
-__ZN5realm12StringColumn18move_last_row_overEmmb
-__ZN5realm12StringColumn5clearEmb
-__ZN5realm12StringColumn9swap_rowsEmm
-__ZNK5realm12StringColumn21supports_search_indexEv
-__ZNK5realm12StringColumn16has_search_indexEv
-__ZNK5realm12StringColumn16get_search_indexEv
-__ZN5realm12StringColumn16get_search_indexEv
-__ZNK5realm12StringColumn14compare_valuesEmm
-__ZN5realm12StringColumn13EraseLeafElem15erase_leaf_elemENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm12StringColumn13EraseLeafElem12destroy_leafENS_6MemRefE
-__ZN5realm12StringColumn13EraseLeafElem20replace_root_by_leafENS_6MemRefE
-__ZN5realm12StringColumn13EraseLeafElem26replace_root_by_empty_leafEv
-__ZN5realm12StringColumn13EraseLeafElemD0Ev
-__ZN5realm12StringColumn13CreateHandler11create_leafEm
-__ZN5realm12StringColumn12SliceHandler10slice_leafENS_6MemRefEmmRNS_9AllocatorE
 __ZTSN5realm12StringColumn13EraseLeafElemE
 __ZTIN5realm12StringColumn13EraseLeafElemE
 __ZTSN5realm12StringColumn13CreateHandlerE
 __ZTIN5realm12StringColumn13CreateHandlerE
 __ZTSN5realm12StringColumn12SliceHandlerE
 __ZTIN5realm12StringColumn12SliceHandlerE
-__ZNK5realm16StringEnumColumn3getEm
-__ZN5realm16StringEnumColumn10set_stringEmNS_10StringDataE
-__ZNK5realm16StringEnumColumn7is_nullEm
-__ZN5realm16StringEnumColumn8set_nullEm
-__ZN5realm16StringEnumColumn11insert_rowsEmmmb
-__ZN5realm16StringEnumColumn10erase_rowsEmmmb
-__ZN5realm16StringEnumColumn18move_last_row_overEmmb
-__ZN5realm16StringEnumColumn5clearEmb
-__ZNK5realm16StringEnumColumn21supports_search_indexEv
-__ZNK5realm16StringEnumColumn14compare_valuesEmm
-__ZN5realm5_impl11TableFriend15create_accessorERNS_9AllocatorEmPNS_5Table6ParentEm
-__ZN5realm5_impl11TableFriend15create_accessorENS_15ConstSubspecRefEPNS_5Table6ParentEm
-__ZN5realm14SubtableColumnD1Ev
-__ZN5realm14SubtableColumnD0Ev
-__ZN5realm14SubtableColumn21refresh_accessor_treeEmRKNS_4SpecE
-__ZThn32_N5realm14SubtableColumnD1Ev
-__ZThn32_N5realm14SubtableColumnD0Ev
-__ZN5realm18SubtableColumnBaseD1Ev
-__ZN5realm18SubtableColumnBaseD0Ev
-__ZThn32_N5realm18SubtableColumnBaseD1Ev
-__ZThn32_N5realm18SubtableColumnBaseD0Ev
-__ZN5realm18SubtableColumnBaseD2Ev
-__ZNK5realm15TimestampColumn16has_search_indexEv
-__ZNK5realm15TimestampColumn6minmaxINS_7GreaterEEENS_9TimestampEPm
-__ZNK5realm15TimestampColumn6minmaxINS_4LessEEENS_9TimestampEPm
-__ZN5realm15TimestampColumnD1Ev
-__ZN5realm15TimestampColumnD0Ev
-__ZNK5realm15TimestampColumn21supports_search_indexEv
-__ZNK5realm15TimestampColumn16get_search_indexEv
-__ZN5realm15TimestampColumn16get_search_indexEv
-__ZN5realm15TimestampColumn13CreateHandlerINS_6BpTreeINS_4util8OptionalIxEEEEE11create_leafEm
-__ZN5realm15TimestampColumn13CreateHandlerINS_6BpTreeIxEEE11create_leafEm
 __ZTSN5realm15TimestampColumn13CreateHandlerINS_6BpTreeINS_4util8OptionalIxEEEEEE
 __ZTIN5realm15TimestampColumn13CreateHandlerINS_6BpTreeINS_4util8OptionalIxEEEEEE
 __ZTSN5realm15TimestampColumn13CreateHandlerINS_6BpTreeIxEEEE
 __ZTIN5realm15TimestampColumn13CreateHandlerINS_6BpTreeIxEEEE
-__ZNSt3__120__shared_ptr_emplaceIN5realm10DescriptorENS_9allocatorIS2_EEED1Ev
-__ZNSt3__120__shared_ptr_emplaceIN5realm10DescriptorENS_9allocatorIS2_EEED0Ev
 __ZTSNSt3__120__shared_ptr_emplaceIN5realm10DescriptorENS_9allocatorIS2_EEEE
 __ZTINSt3__120__shared_ptr_emplaceIN5realm10DescriptorENS_9allocatorIS2_EEEE
-__ZN5realm10LogicErrorD0Ev
-__ZN5realm18DescriptorMismatchD1Ev
-__ZN5realm14TableNameInUseD1Ev
-__ZN5realm5_impl11TableFriend26create_incomplete_accessorERNS_9AllocatorEmPNS_5Table6ParentEm
-__ZN5realm11NoSuchTableD1Ev
-__ZN5realm20CrossTableLinkTargetD1Ev
-__ZN5realm5Group18DefaultTableWriterD1Ev
-__ZN5realm4util4File9StreambufD1Ev
-__ZN5realm4util18MemoryOutputStreamD1Ev
-__ZN5realm5Group16update_child_refEmm
-__ZNK5realm5Group13get_child_refEm
-__ZNK5realm5Group14get_child_nameEm
-__ZN5realm5Group16get_parent_groupEv
-__ZN5realm5Group24child_accessor_destroyedEPNS_5TableE
-__ZN5realm5Table6Parent20record_subtable_pathEPmS2_
-__ZN5realm18DescriptorMismatchD0Ev
-__ZNK5realm18DescriptorMismatch4whatEv
-__ZN5realm14TableNameInUseD0Ev
-__ZNK5realm14TableNameInUse4whatEv
-__ZN5realm11NoSuchTableD0Ev
-__ZNK5realm11NoSuchTable4whatEv
-__ZN5realm20CrossTableLinkTargetD0Ev
-__ZNK5realm20CrossTableLinkTarget4whatEv
-__ZN5realm5Group18DefaultTableWriter11write_namesERNS_5_impl12OutputStreamE
-__ZN5realm5Group18DefaultTableWriter12write_tablesERNS_5_impl12OutputStreamE
-__ZN5realm5Group18DefaultTableWriterD0Ev
-__ZN5realm4util4File9StreambufD0Ev
-__ZN5realm4util4File9Streambuf7seekposENSt3__14fposI11__mbstate_tEEj
-__ZN5realm4util4File9Streambuf4syncEv
-__ZN5realm4util4File9Streambuf8overflowEi
-__ZN5realm4util18MemoryOutputStreamD0Ev
-__ZTv0_n24_N5realm4util18MemoryOutputStreamD1Ev
-__ZTv0_n24_N5realm4util18MemoryOutputStreamD0Ev
-__ZN5realm4util21MemoryOutputStreambufD1Ev
-__ZN5realm4util21MemoryOutputStreambufD0Ev
-__ZN5realm5Group16TransactAdvancer12select_tableEmiPKm
-__ZN5realm5Group16TransactAdvancer17select_descriptorEiPKm
-__ZN5realm5Group16TransactAdvancer24insert_group_level_tableEmmNS_10StringDataE
-__ZN5realm5Group16TransactAdvancer23erase_group_level_tableEmm
 __ZN12_GLOBAL__N_119InsertColumnUpdaterD1Ev
 __ZN12_GLOBAL__N_119InsertColumnUpdater6updateERN5realm5TableE
 __ZN12_GLOBAL__N_119InsertColumnUpdater13update_parentERN5realm5TableE
@@ -8935,18 +8542,6 @@ __ZTIN12_GLOBAL__N_117MoveColumnUpdaterE
 __ZTVN12_GLOBAL__N_116MarkDirtyUpdaterE
 __ZTSN12_GLOBAL__N_116MarkDirtyUpdaterE
 __ZTIN12_GLOBAL__N_116MarkDirtyUpdaterE
-__ZN5realm20IncompatibleLockFileC1ERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
-__ZN5realm20IncompatibleLockFileD1Ev
-__ZN5realm4util17InterprocessMutex15set_shared_partERNS1_10SharedPartERKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEESC_
-__ZN5realm18MultipleSyncAgentsD1Ev
-__ZN5realm25FileFormatUpgradeRequiredD1Ev
-__ZN5realm20IncompatibleLockFileD0Ev
-__ZNSt3__120__shared_ptr_emplaceIN5realm4util17InterprocessMutex8LockInfoENS_9allocatorIS4_EEED1Ev
-__ZNSt3__120__shared_ptr_emplaceIN5realm4util17InterprocessMutex8LockInfoENS_9allocatorIS4_EEED0Ev
-__ZN5realm18MultipleSyncAgentsD0Ev
-__ZNK5realm18MultipleSyncAgents4whatEv
-__ZN5realm25FileFormatUpgradeRequiredD0Ev
-__ZNK5realm25FileFormatUpgradeRequired4whatEv
 __GLOBAL__sub_I_group_shared.cpp
 __ZTSN5realm18MultipleSyncAgentsE
 __ZTIN5realm18MultipleSyncAgentsE
@@ -8954,730 +8549,11 @@ __ZTSNSt3__120__shared_ptr_emplaceIN5realm4util17InterprocessMutex8LockInfoENS_9
 __ZTINSt3__120__shared_ptr_emplaceIN5realm4util17InterprocessMutex8LockInfoENS_9allocatorIS4_EEEE
 __ZTSN5realm5_impl15ArrayWriterBaseE
 __ZTIN5realm5_impl15ArrayWriterBaseE
-__ZN5realm5_impl14InRealmHistoryD1Ev
-__ZN5realm5_impl14InRealmHistoryD0Ev
-__ZN5realm5_impl12OutputStreamD1Ev
-__ZN5realm5_impl12OutputStreamD0Ev
 __ZN12_GLOBAL__N_120has_duplicate_valuesERKN5realm5ArrayEPNS0_10ColumnBaseE
-__ZN5realm6BpTreeIxE15AdjustGEHandlerD1Ev
-__ZN5realm6BpTreeIxE15AdjustGEHandler6updateENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeIxE15AdjustGEHandlerD0Ev
 __ZTSN5realm6BpTreeIxE15AdjustGEHandlerE
 __ZTIN5realm6BpTreeIxE15AdjustGEHandlerE
-__ZN5realm8LinkViewD1Ev
-__ZN5realm8LinkViewD0Ev
-__ZNK5realm8LinkView15get_column_baseEm
-__ZNK5realm8LinkView4sizeEv
-__ZNK5realm8LinkView10is_in_syncEv
-__ZN5realm5_impl18TransactLogEncoder26append_variable_size_instrINS_4util8TypeConsImvEEZNS1_17link_list_set_allERKNS_6ColumnIxEEE4iterEEbNS0_11InstructionERKNS3_5TupleIT_EET0_SH_
-__ZN5realm13TableViewBaseC2EPNS_5TableE
-__ZN5realm8LinkViewD2Ev
 __ZTSNSt3__123enable_shared_from_thisIN5realm8LinkViewEEE
 __ZTINSt3__123enable_shared_from_thisIN5realm8LinkViewEEE
-__ZN5realm10ParentNode9set_tableERKNS_5TableE
-__ZN5realm14ConstTableViewD1Ev
-__ZN5realm10ParentNode15gather_childrenERNSt3__16vectorIPS0_NS1_9allocatorIS3_EEEE
-__ZN5realm10ParentNode9add_childENSt3__110unique_ptrIS0_NS1_14default_deleteIS0_EEEE
-__ZN5realm14ExpressionNodeD1Ev
-__ZN5realm14ExpressionNodeD0Ev
-__ZN5realm10ParentNode4initEv
-__ZN5realm14ExpressionNode16find_first_localEmm
-__ZN5realm10ParentNode8validateEv
-__ZNK5realm14ExpressionNode5cloneEPNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEE
-__ZN5realm14ExpressionNode20apply_handover_patchERNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEERNS_5GroupE
-__ZN5realm14ExpressionNode13table_changedEv
-__ZN5realm10ParentNodeD2Ev
-__ZN5realm10ParentNode20apply_handover_patchERNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEERNS_5GroupE
-__ZN5realm11LinksToNodeD1Ev
-__ZN5realm11LinksToNodeD0Ev
-__ZN5realm11LinksToNode16find_first_localEmm
-__ZNK5realm11LinksToNode5cloneEPNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEE
-__ZN5realm11LinksToNode20apply_handover_patchERNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEERNS_5GroupE
-__ZN5realm11LinksToNode13table_changedEv
-__ZN5realm11LinksToNodeC2ERKS0_PNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm24LinksToNodeHandoverPatchD1Ev
-__ZN5realm24LinksToNodeHandoverPatchD0Ev
-__ZN5realm14ConstTableViewD0Ev
-__ZNK5realm14ConstTableView5cloneEv
-__ZNK5realm14ConstTableView18clone_for_handoverERNSt3__110unique_ptrINS_22TableViewHandoverPatchENS1_14default_deleteIS3_EEEENS_18ConstSourcePayloadE
-__ZN5realm14ConstTableView18clone_for_handoverERNSt3__110unique_ptrINS_22TableViewHandoverPatchENS1_14default_deleteIS3_EEEENS_20MutableSourcePayloadE
-__ZN5realm14SortDescriptoraSEOS0_
-__ZN5realm6OrNodeC2ENSt3__110unique_ptrINS_10ParentNodeENS1_14default_deleteIS3_EEEE
-__ZN5realm6OrNodeD1Ev
-__ZN5realm6OrNodeD0Ev
-__ZN5realm6OrNode4initEv
-__ZN5realm6OrNode16find_first_localEmm
-__ZN5realm6OrNode8validateEv
-__ZNK5realm6OrNode5cloneEPNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEE
-__ZN5realm6OrNode20apply_handover_patchERNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEERNS_5GroupE
-__ZN5realm6OrNode13table_changedEv
-__ZN5realm6OrNodeD2Ev
-__ZN5realm6OrNodeC2ERKS0_PNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm12SubtableNodeD1Ev
-__ZN5realm12SubtableNodeD0Ev
-__ZN5realm12SubtableNode4initEv
-__ZN5realm12SubtableNode16find_first_localEmm
-__ZN5realm12SubtableNode8validateEv
-__ZNK5realm12SubtableNode5cloneEPNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEE
-__ZN5realm12SubtableNode20apply_handover_patchERNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEERNS_5GroupE
-__ZN5realm12SubtableNode13table_changedEv
-__ZN5realm12SubtableNodeC2ERKS0_PNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm13TableViewBaseC2EPNS_5TableERNS_5QueryEmmm
-__ZN5realm10BinaryNodeINS_5EqualEEC1ENS_10BinaryDataEm
-__ZN5realm10BinaryNodeINS_5EqualEED1Ev
-__ZN5realm10BinaryNodeINS_5EqualEED0Ev
-__ZN5realm10BinaryNodeINS_5EqualEE4initEv
-__ZN5realm10BinaryNodeINS_5EqualEE16find_first_localEmm
-__ZNK5realm10BinaryNodeINS_5EqualEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10BinaryNodeINS_5EqualEE13table_changedEv
-__ZN5realm10BinaryNodeINS_5EqualEEC2ERKS2_PNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm10BinaryNodeINS_8NotEqualEEC1ENS_10BinaryDataEm
-__ZN5realm10BinaryNodeINS_8NotEqualEED1Ev
-__ZN5realm10BinaryNodeINS_8NotEqualEED0Ev
-__ZN5realm10BinaryNodeINS_8NotEqualEE4initEv
-__ZN5realm10BinaryNodeINS_8NotEqualEE16find_first_localEmm
-__ZNK5realm10BinaryNodeINS_8NotEqualEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10BinaryNodeINS_8NotEqualEE13table_changedEv
-__ZN5realm10BinaryNodeINS_8NotEqualEEC2ERKS2_PNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm10BinaryNodeINS_10BeginsWithEED1Ev
-__ZN5realm10BinaryNodeINS_10BeginsWithEED0Ev
-__ZN5realm10BinaryNodeINS_10BeginsWithEE4initEv
-__ZN5realm10BinaryNodeINS_10BeginsWithEE16find_first_localEmm
-__ZNK5realm10BinaryNodeINS_10BeginsWithEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10BinaryNodeINS_10BeginsWithEE13table_changedEv
-__ZN5realm10BinaryNodeINS_10BeginsWithEEC2ERKS2_PNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm10BinaryNodeINS_8EndsWithEED1Ev
-__ZN5realm10BinaryNodeINS_8EndsWithEED0Ev
-__ZN5realm10BinaryNodeINS_8EndsWithEE4initEv
-__ZN5realm10BinaryNodeINS_8EndsWithEE16find_first_localEmm
-__ZNK5realm10BinaryNodeINS_8EndsWithEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10BinaryNodeINS_8EndsWithEE13table_changedEv
-__ZN5realm10BinaryNodeINS_8EndsWithEEC2ERKS2_PNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm10BinaryNodeINS_8ContainsEED1Ev
-__ZN5realm10BinaryNodeINS_8ContainsEED0Ev
-__ZN5realm10BinaryNodeINS_8ContainsEE4initEv
-__ZN5realm10BinaryNodeINS_8ContainsEE16find_first_localEmm
-__ZNK5realm10BinaryNodeINS_8ContainsEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10BinaryNodeINS_8ContainsEE13table_changedEv
-__ZN5realm10BinaryNodeINS_8ContainsEEC2ERKS2_PNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_5EqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_5EqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_5EqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_5EqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIxEENS_5EqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_5EqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_5EqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_8NotEqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_8NotEqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_8NotEqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_8NotEqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIxEENS_8NotEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_8NotEqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_8NotEqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_4LessEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_4LessEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_4LessEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_4LessEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIxEENS_4LessEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_4LessEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_4LessEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_12GreaterEqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_12GreaterEqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_12GreaterEqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_12GreaterEqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIxEENS_12GreaterEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_12GreaterEqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_12GreaterEqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_9LessEqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_9LessEqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_9LessEqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_9LessEqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIxEENS_9LessEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_9LessEqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_9LessEqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_7GreaterEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_7GreaterEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_7GreaterEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_7GreaterEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIxEENS_7GreaterEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_7GreaterEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIxEENS_7GreaterEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_8NotEqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_8NotEqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_8NotEqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_8NotEqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIfEENS_8NotEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_8NotEqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_8NotEqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_4LessEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_4LessEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_4LessEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_4LessEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIfEENS_4LessEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_4LessEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_4LessEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_7GreaterEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_7GreaterEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_7GreaterEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_7GreaterEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIfEENS_7GreaterEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_7GreaterEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_7GreaterEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_12GreaterEqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_12GreaterEqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_12GreaterEqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_12GreaterEqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIfEENS_12GreaterEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_12GreaterEqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_12GreaterEqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_9LessEqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_9LessEqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_9LessEqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_9LessEqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIfEENS_9LessEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_9LessEqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_9LessEqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_5EqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_5EqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_5EqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_5EqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIfEENS_5EqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_5EqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIfEENS_5EqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_5EqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_5EqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_5EqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_5EqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIdEENS_5EqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_5EqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_5EqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_9LessEqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_9LessEqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_9LessEqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_9LessEqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIdEENS_9LessEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_9LessEqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_9LessEqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_12GreaterEqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_12GreaterEqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_12GreaterEqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_12GreaterEqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIdEENS_12GreaterEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_12GreaterEqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_12GreaterEqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_7GreaterEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_7GreaterEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_7GreaterEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_7GreaterEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIdEENS_7GreaterEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_7GreaterEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_7GreaterEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_4LessEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_4LessEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_4LessEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_4LessEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIdEENS_4LessEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_4LessEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_4LessEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_8NotEqualEED1Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_8NotEqualEED0Ev
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_8NotEqualEE4initEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_8NotEqualEE16find_first_localEmm
-__ZNK5realm14TwoColumnsNodeINS_6ColumnIdEENS_8NotEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_8NotEqualEE13table_changedEv
-__ZN5realm14TwoColumnsNodeINS_6ColumnIdEENS_8NotEqualEEC2ERKS4_PNSt3__16vectorINS7_10unique_ptrINS_22QueryNodeHandoverPatchENS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEE
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_5EqualEED1Ev
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_5EqualEED0Ev
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE4initEv
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_5EqualEE16find_first_localEmm
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_5EqualEE23aggregate_local_prepareENS_6ActionENS_8DataTypeEb
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_5EqualEE15aggregate_localEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseE
-__ZNK5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_5EqualEE5cloneEPNSt3__16vectorINS8_10unique_ptrINS_22QueryNodeHandoverPatchENS8_14default_deleteISB_EEEENS8_9allocatorISE_EEEE
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE13table_changedEv
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEED1Ev
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEED0Ev
-__ZN5realm14ColumnNodeBaseD1Ev
-__ZN5realm14ColumnNodeBaseD0Ev
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_5EqualEE24get_specialized_callbackENS_6ActionENS_8DataTypeEb
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE4ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE4ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE4ENS_6ColumnINS_4util8OptionalIxEEEEEEbx
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm16ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm1ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm2ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm4ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm8ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE4ENS_6ColumnIxEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE1ENS_6ColumnINS_4util8OptionalIxEEEEEEbx
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE1ENS_6ColumnIxEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE1ENS_6ColumnIfEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE1ENS_6ColumnIdEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE2ENS_6ColumnINS_4util8OptionalIxEEEEEEbx
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE2ENS_6ColumnIxEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE2ENS_6ColumnIfEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE2ENS_6ColumnIdEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE3ENS_6ColumnINS_4util8OptionalIxEEEEEEbx
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE3ENS_6ColumnIxEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE3ENS_6ColumnIfEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE3ENS_6ColumnIdEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE5ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE5ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE5ENS_6ColumnINS_4util8OptionalIxEEEEEEbx
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE5ENS_6ColumnIxEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE7ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_5EqualELNS_6ActionE7ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE7ENS_6ColumnINS_4util8OptionalIxEEEEEEbx
-__ZN5realm14ColumnNodeBase14match_callbackILNS_6ActionE7ENS_6ColumnIxEEEEbx
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE20aggregate_local_implEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseEi
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEC2ERKS6_PNSt3__16vectorINS9_10unique_ptrINS_22QueryNodeHandoverPatchENS9_14default_deleteISC_EEEENS9_9allocatorISF_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_5EqualEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_5EqualEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_5EqualEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_5EqualEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIfEENS_5EqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_5EqualEE13table_changedEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_5EqualEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_5EqualEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_5EqualEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_5EqualEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIdEENS_5EqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_5EqualEE13table_changedEv
-__ZN5realm14StringNodeBaseC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_5EqualEED1Ev
-__ZN5realm10StringNodeINS_5EqualEED0Ev
-__ZN5realm10StringNodeINS_5EqualEE4initEv
-__ZN5realm10StringNodeINS_5EqualEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_5EqualEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm14StringNodeBase13table_changedEv
-__ZN5realm14StringNodeBaseD1Ev
-__ZN5realm14StringNodeBaseD0Ev
-__ZN5realm14StringNodeBase4initEv
-__ZN5realm16SequentialGetterINS_16StringEnumColumnEED1Ev
-__ZN5realm16SequentialGetterINS_16StringEnumColumnEED0Ev
-__ZN5realm10StringNodeINS_5EqualEED2Ev
-__ZN5realm14StringNodeBaseC2ERKS0_PNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm13TimestampNodeINS_5EqualEED1Ev
-__ZN5realm13TimestampNodeINS_5EqualEED0Ev
-__ZN5realm13TimestampNodeINS_5EqualEE4initEv
-__ZN5realm13TimestampNodeINS_5EqualEE16find_first_localEmm
-__ZNK5realm13TimestampNodeINS_5EqualEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm13TimestampNodeINS_5EqualEE13table_changedEv
-__ZNK5realm15TimestampColumn4findINS_5EqualEEEmNS_9TimestampEmm
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_8NotEqualEED1Ev
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_8NotEqualEED0Ev
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_8NotEqualEE16find_first_localEmm
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_8NotEqualEE23aggregate_local_prepareENS_6ActionENS_8DataTypeEb
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_8NotEqualEE15aggregate_localEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseE
-__ZNK5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_8NotEqualEE5cloneEPNSt3__16vectorINS8_10unique_ptrINS_22QueryNodeHandoverPatchENS8_14default_deleteISB_EEEENS8_9allocatorISE_EEEE
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_8NotEqualEE24get_specialized_callbackENS_6ActionENS_8DataTypeEb
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE4ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE4ELNS_8DataTypeE0ELb0EEEbmm
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm16ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm1ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm2ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm4ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm8ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE5ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE5ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE7ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE7ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_8NotEqualEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_8NotEqualEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_8NotEqualEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_8NotEqualEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIfEENS_8NotEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_8NotEqualEE13table_changedEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_8NotEqualEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_8NotEqualEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_8NotEqualEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_8NotEqualEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIdEENS_8NotEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_8NotEqualEE13table_changedEv
-__ZN5realm10StringNodeINS_8NotEqualEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_8NotEqualEED1Ev
-__ZN5realm10StringNodeINS_8NotEqualEED0Ev
-__ZN5realm10StringNodeINS_8NotEqualEE4initEv
-__ZN5realm10StringNodeINS_8NotEqualEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_8NotEqualEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm13TimestampNodeINS_8NotEqualEED1Ev
-__ZN5realm13TimestampNodeINS_8NotEqualEED0Ev
-__ZN5realm13TimestampNodeINS_8NotEqualEE4initEv
-__ZN5realm13TimestampNodeINS_8NotEqualEE16find_first_localEmm
-__ZNK5realm13TimestampNodeINS_8NotEqualEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm13TimestampNodeINS_8NotEqualEE13table_changedEv
-__ZNK5realm15TimestampColumn4findINS_8NotEqualEEEmNS_9TimestampEmm
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_5EqualEED1Ev
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_5EqualEED0Ev
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE4initEv
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_5EqualEE16find_first_localEmm
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_5EqualEE23aggregate_local_prepareENS_6ActionENS_8DataTypeEb
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_5EqualEE15aggregate_localEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseE
-__ZNK5realm11IntegerNodeINS_6ColumnIxEENS_5EqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE13table_changedEv
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEED1Ev
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEED0Ev
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_5EqualEE24get_specialized_callbackENS_6ActionENS_8DataTypeEb
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE4ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE4ELNS_8DataTypeE0ELb0EEEbmm
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm16ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm1ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm2ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm4ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb1ELNS_6ActionE7ELm8ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE1ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE2ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE3ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE5ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE5ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE7ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_5EqualELNS_6ActionE7ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE20aggregate_local_implEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseEi
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEEC2ERKS3_PNSt3__16vectorINS6_10unique_ptrINS_22QueryNodeHandoverPatchENS6_14default_deleteIS9_EEEENS6_9allocatorISC_EEEE
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_8NotEqualEED1Ev
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_8NotEqualEED0Ev
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_8NotEqualEE16find_first_localEmm
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_8NotEqualEE23aggregate_local_prepareENS_6ActionENS_8DataTypeEb
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_8NotEqualEE15aggregate_localEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseE
-__ZNK5realm11IntegerNodeINS_6ColumnIxEENS_8NotEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_8NotEqualEE24get_specialized_callbackENS_6ActionENS_8DataTypeEb
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE4ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE4ELNS_8DataTypeE0ELb0EEEbmm
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm16ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm1ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm2ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm4ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZNK5realm5Array16compare_equalityILb0ELNS_6ActionE7ELm8ENSt3__16__bindINS3_8__mem_fnIMNS_14ColumnNodeBaseEFbxEEEJPNS_15IntegerNodeBaseINS_6ColumnIxEEEERNS3_12placeholders4__phILi1EEEEEEEEbxmmmPNS_10QueryStateIxEET2_
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE1ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE2ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE3ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE5ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE5ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE7ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_8NotEqualELNS_6ActionE7ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_7GreaterEED1Ev
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_7GreaterEED0Ev
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_7GreaterEE16find_first_localEmm
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_7GreaterEE23aggregate_local_prepareENS_6ActionENS_8DataTypeEb
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_7GreaterEE15aggregate_localEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseE
-__ZNK5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_7GreaterEE5cloneEPNSt3__16vectorINS8_10unique_ptrINS_22QueryNodeHandoverPatchENS8_14default_deleteISB_EEEENS8_9allocatorISE_EEEE
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_7GreaterEE24get_specialized_callbackENS_6ActionENS_8DataTypeEb
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE4ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE4ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE5ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE5ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE7ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_7GreaterELNS_6ActionE7ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_7GreaterEED1Ev
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_7GreaterEED0Ev
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_7GreaterEE16find_first_localEmm
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_7GreaterEE23aggregate_local_prepareENS_6ActionENS_8DataTypeEb
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_7GreaterEE15aggregate_localEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseE
-__ZNK5realm11IntegerNodeINS_6ColumnIxEENS_7GreaterEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_7GreaterEE24get_specialized_callbackENS_6ActionENS_8DataTypeEb
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE4ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE4ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE1ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE2ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE3ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE5ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE5ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE7ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_7GreaterELNS_6ActionE7ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_4LessEED1Ev
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_4LessEED0Ev
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_4LessEE16find_first_localEmm
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_4LessEE23aggregate_local_prepareENS_6ActionENS_8DataTypeEb
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_4LessEE15aggregate_localEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseE
-__ZNK5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_4LessEE5cloneEPNSt3__16vectorINS8_10unique_ptrINS_22QueryNodeHandoverPatchENS8_14default_deleteISB_EEEENS8_9allocatorISE_EEEE
-__ZN5realm11IntegerNodeINS_6ColumnINS_4util8OptionalIxEEEENS_4LessEE24get_specialized_callbackENS_6ActionENS_8DataTypeEb
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE4ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE4ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE5ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE5ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE7ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnINS_4util8OptionalIxEEEEE28find_callback_specializationINS_4LessELNS_6ActionE7ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_4LessEED1Ev
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_4LessEED0Ev
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_4LessEE16find_first_localEmm
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_4LessEE23aggregate_local_prepareENS_6ActionENS_8DataTypeEb
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_4LessEE15aggregate_localEPNS_14QueryStateBaseEmmmPNS_20SequentialGetterBaseE
-__ZNK5realm11IntegerNodeINS_6ColumnIxEENS_4LessEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm11IntegerNodeINS_6ColumnIxEENS_4LessEE24get_specialized_callbackENS_6ActionENS_8DataTypeEb
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE4ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE4ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE1ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE2ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE9ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE9ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE10ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE3ELNS_8DataTypeE10ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE5ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE5ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE7ELNS_8DataTypeE0ELb1EEEbmm
-__ZN5realm15IntegerNodeBaseINS_6ColumnIxEEE28find_callback_specializationINS_4LessELNS_6ActionE7ELNS_8DataTypeE0ELb0EEEbmm
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_7GreaterEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_7GreaterEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_7GreaterEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_7GreaterEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIfEENS_7GreaterEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_7GreaterEE13table_changedEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_12GreaterEqualEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_12GreaterEqualEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_12GreaterEqualEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_12GreaterEqualEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIfEENS_12GreaterEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_12GreaterEqualEE13table_changedEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_9LessEqualEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_9LessEqualEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_9LessEqualEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_9LessEqualEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIfEENS_9LessEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_9LessEqualEE13table_changedEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_4LessEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_4LessEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_4LessEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_4LessEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIfEENS_4LessEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIfEENS_4LessEE13table_changedEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_7GreaterEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_7GreaterEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_7GreaterEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_7GreaterEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIdEENS_7GreaterEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_7GreaterEE13table_changedEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_12GreaterEqualEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_12GreaterEqualEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_12GreaterEqualEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_12GreaterEqualEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIdEENS_12GreaterEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_12GreaterEqualEE13table_changedEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_9LessEqualEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_9LessEqualEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_9LessEqualEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_9LessEqualEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIdEENS_9LessEqualEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_9LessEqualEE13table_changedEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_4LessEED1Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_4LessEED0Ev
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_4LessEE4initEv
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_4LessEE16find_first_localEmm
-__ZNK5realm15FloatDoubleNodeINS_6ColumnIdEENS_4LessEE5cloneEPNSt3__16vectorINS5_10unique_ptrINS_22QueryNodeHandoverPatchENS5_14default_deleteIS8_EEEENS5_9allocatorISB_EEEE
-__ZN5realm15FloatDoubleNodeINS_6ColumnIdEENS_4LessEE13table_changedEv
-__ZN5realm13TimestampNodeINS_7GreaterEED1Ev
-__ZN5realm13TimestampNodeINS_7GreaterEED0Ev
-__ZN5realm13TimestampNodeINS_7GreaterEE4initEv
-__ZN5realm13TimestampNodeINS_7GreaterEE16find_first_localEmm
-__ZNK5realm13TimestampNodeINS_7GreaterEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm13TimestampNodeINS_7GreaterEE13table_changedEv
-__ZNK5realm15TimestampColumn4findINS_7GreaterEEEmNS_9TimestampEmm
-__ZN5realm13TimestampNodeINS_12GreaterEqualEED1Ev
-__ZN5realm13TimestampNodeINS_12GreaterEqualEED0Ev
-__ZN5realm13TimestampNodeINS_12GreaterEqualEE4initEv
-__ZN5realm13TimestampNodeINS_12GreaterEqualEE16find_first_localEmm
-__ZNK5realm13TimestampNodeINS_12GreaterEqualEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm13TimestampNodeINS_12GreaterEqualEE13table_changedEv
-__ZN5realm13TimestampNodeINS_9LessEqualEED1Ev
-__ZN5realm13TimestampNodeINS_9LessEqualEED0Ev
-__ZN5realm13TimestampNodeINS_9LessEqualEE4initEv
-__ZN5realm13TimestampNodeINS_9LessEqualEE16find_first_localEmm
-__ZNK5realm13TimestampNodeINS_9LessEqualEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm13TimestampNodeINS_9LessEqualEE13table_changedEv
-__ZN5realm13TimestampNodeINS_4LessEED1Ev
-__ZN5realm13TimestampNodeINS_4LessEED0Ev
-__ZN5realm13TimestampNodeINS_4LessEE4initEv
-__ZN5realm13TimestampNodeINS_4LessEE16find_first_localEmm
-__ZNK5realm13TimestampNodeINS_4LessEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm13TimestampNodeINS_4LessEE13table_changedEv
-__ZNK5realm15TimestampColumn4findINS_4LessEEEmNS_9TimestampEmm
-__ZN5realm10StringNodeINS_8EqualInsEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_8EqualInsEED1Ev
-__ZN5realm10StringNodeINS_8EqualInsEED0Ev
-__ZN5realm10StringNodeINS_8EqualInsEE4initEv
-__ZN5realm10StringNodeINS_8EqualInsEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_8EqualInsEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10StringNodeINS_10BeginsWithEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_10BeginsWithEED1Ev
-__ZN5realm10StringNodeINS_10BeginsWithEED0Ev
-__ZN5realm10StringNodeINS_10BeginsWithEE4initEv
-__ZN5realm10StringNodeINS_10BeginsWithEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_10BeginsWithEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10StringNodeINS_13BeginsWithInsEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_13BeginsWithInsEED1Ev
-__ZN5realm10StringNodeINS_13BeginsWithInsEED0Ev
-__ZN5realm10StringNodeINS_13BeginsWithInsEE4initEv
-__ZN5realm10StringNodeINS_13BeginsWithInsEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_13BeginsWithInsEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10StringNodeINS_8EndsWithEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_8EndsWithEED1Ev
-__ZN5realm10StringNodeINS_8EndsWithEED0Ev
-__ZN5realm10StringNodeINS_8EndsWithEE4initEv
-__ZN5realm10StringNodeINS_8EndsWithEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_8EndsWithEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10StringNodeINS_11EndsWithInsEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_11EndsWithInsEED1Ev
-__ZN5realm10StringNodeINS_11EndsWithInsEED0Ev
-__ZN5realm10StringNodeINS_11EndsWithInsEE4initEv
-__ZN5realm10StringNodeINS_11EndsWithInsEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_11EndsWithInsEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10StringNodeINS_8ContainsEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_8ContainsEED1Ev
-__ZN5realm10StringNodeINS_8ContainsEED0Ev
-__ZN5realm10StringNodeINS_8ContainsEE4initEv
-__ZN5realm10StringNodeINS_8ContainsEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_8ContainsEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10StringNodeINS_11ContainsInsEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_11ContainsInsEED1Ev
-__ZN5realm10StringNodeINS_11ContainsInsEED0Ev
-__ZN5realm10StringNodeINS_11ContainsInsEE4initEv
-__ZN5realm10StringNodeINS_11ContainsInsEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_11ContainsInsEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10StringNodeINS_11NotEqualInsEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_11NotEqualInsEED1Ev
-__ZN5realm10StringNodeINS_11NotEqualInsEED0Ev
-__ZN5realm10StringNodeINS_11NotEqualInsEE4initEv
-__ZN5realm10StringNodeINS_11NotEqualInsEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_11NotEqualInsEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10StringNodeINS_4LikeEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_4LikeEED1Ev
-__ZN5realm10StringNodeINS_4LikeEED0Ev
-__ZN5realm10StringNodeINS_4LikeEE4initEv
-__ZN5realm10StringNodeINS_4LikeEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_4LikeEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10StringNodeINS_7LikeInsEEC2ENS_10StringDataEm
-__ZN5realm10StringNodeINS_7LikeInsEED1Ev
-__ZN5realm10StringNodeINS_7LikeInsEED0Ev
-__ZN5realm10StringNodeINS_7LikeInsEE4initEv
-__ZN5realm10StringNodeINS_7LikeInsEE16find_first_localEmm
-__ZNK5realm10StringNodeINS_7LikeInsEE5cloneEPNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
 __ZTSN5realm6OrNodeE
 __ZTIN5realm6OrNodeE
 __ZTSN5realm14ExpressionNodeE
@@ -9828,106 +8704,8 @@ __ZTSN5realm6ColumnIfEE
 __ZTSN5realm6ColumnIdEE
 __ZTSN5realm10QueryStateIfEE
 __ZTIN5realm10QueryStateIfEE
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE0ENS_6ColumnINS_4util8OptionalIxEEEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE0ENS_6ColumnIxEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE4ENS_6ColumnIxEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE1ENS_6ColumnINS_4util8OptionalIxEEEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE1ENS_6ColumnIxEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE1ENS_6ColumnIfEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE1ENS_6ColumnIdEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE2ENS_6ColumnINS_4util8OptionalIxEEEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE2ENS_6ColumnIxEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE2ENS_6ColumnIfEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE2ENS_6ColumnIdEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE3ENS_6ColumnINS_4util8OptionalIxEEEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE3ENS_6ColumnIxEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE3ENS_6ColumnIfEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE3ENS_6ColumnIdEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE5ENS_6ColumnIxEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE7ENS_6ColumnINS_4util8OptionalIxEEEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNode28column_action_specializationILNS_6ActionE7ENS_6ColumnIxEEEEbPNS_14QueryStateBaseEPNS_20SequentialGetterBaseEm
-__ZN5realm10ParentNodeD1Ev
-__ZN5realm10ParentNodeD0Ev
-__ZN5realm7NotNodeD1Ev
-__ZN5realm7NotNodeD0Ev
-__ZN5realm7NotNode4initEv
-__ZN5realm7NotNode8validateEv
-__ZNK5realm7NotNode5cloneEPNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEE
-__ZN5realm7NotNode20apply_handover_patchERNSt3__16vectorINS1_10unique_ptrINS_22QueryNodeHandoverPatchENS1_14default_deleteIS4_EEEENS1_9allocatorIS7_EEEERNS_5GroupE
-__ZN5realm7NotNode13table_changedEv
-__ZN5realm7NotNodeC2ERKS0_PNSt3__16vectorINS3_10unique_ptrINS_22QueryNodeHandoverPatchENS3_14default_deleteIS6_EEEENS3_9allocatorIS9_EEEE
-__ZN5realm10Descriptor18insert_column_linkEmNS_8DataTypeENS_10StringDataERNS_5TableENS_8LinkTypeE
-__ZN5realm10Descriptor13insert_columnEmNS_8DataTypeENS_10StringDataEPNSt3__110shared_ptrIS0_EEb
-__ZN5realm5Table21InsertSubtableColumnsD1Ev
-__ZN5realm5_impl28TransactLogConvenientEncoder13insert_columnERKNS_10DescriptorEmNS_8DataTypeENS_10StringDataERNS_14LinkTargetInfoEb
-__ZN5realm5_impl28TransactLogConvenientEncoder12erase_columnERKNS_10DescriptorEm
-__ZN5realm5Table20EraseSubtableColumnsD1Ev
-__ZN5realm5Table19MoveSubtableColumnsD1Ev
-__ZN5realm5Table21RenameSubtableColumnsD1Ev
-__ZN5realm5_impl28TransactLogConvenientEncoder10set_stringEPKNS_5TableEmmNS_10StringDataENS0_11InstructionE
-__ZN5realm5_impl28TransactLogConvenientEncoder8set_linkEPKNS_5TableEmmmNS0_11InstructionE
 __ZN12_GLOBAL__N_121get_group_ndx_blockedEmRNS_9AggrStateERN5realm5TableE
 __ZN12_GLOBAL__N_113get_group_ndxEmRNS_9AggrStateERN5realm5TableE
-__ZN5realm5Table11SliceWriterD1Ev
-__ZN5realm5Table6ParentD1Ev
-__ZN5realm5Table6ParentD0Ev
-__ZN5realm5Table21InsertSubtableColumns6updateERKNS_14SubtableColumnERNS_5ArrayE
-__ZN5realm5Table21InsertSubtableColumns15update_accessorERS0_
-__ZN5realm5Table21InsertSubtableColumnsD0Ev
-__ZN5realm5Table20EraseSubtableColumns6updateERKNS_14SubtableColumnERNS_5ArrayE
-__ZN5realm5Table20EraseSubtableColumns15update_accessorERS0_
-__ZN5realm5Table20EraseSubtableColumnsD0Ev
-__ZN5realm5Table19MoveSubtableColumns6updateERKNS_14SubtableColumnERNS_5ArrayE
-__ZN5realm5Table19MoveSubtableColumns15update_accessorERS0_
-__ZN5realm5Table19MoveSubtableColumnsD0Ev
-__ZN5realm5Table21RenameSubtableColumns6updateERKNS_14SubtableColumnERNS_5ArrayE
-__ZN5realm5Table21RenameSubtableColumns15update_accessorERS0_
-__ZN5realm5Table21RenameSubtableColumnsD0Ev
-__ZN5realm13TableViewBaseC2EPNS_5TableEmNS_12BasicRowExprIKS1_EE
-__ZN5realm5Table11SliceWriter11write_namesERNS_5_impl12OutputStreamE
-__ZN5realm5Table11SliceWriter12write_tablesERNS_5_impl12OutputStreamE
-__ZN5realm5Table11SliceWriterD0Ev
-__ZNK5realm6ColumnIfE21supports_search_indexEv
-__ZN5realm6ColumnIfE18replace_root_arrayENSt3__110unique_ptrINS_5ArrayENS2_14default_deleteIS4_EEEE
-__ZN5realm6BpTreeIfE14SetNullHandlerD1Ev
-__ZN5realm6BpTreeIfE14SetNullHandler6updateENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeIfE14SetNullHandlerD0Ev
-__ZN5realm10BasicArrayIfE12create_arrayEmRNS_9AllocatorE
-__ZN5realm6to_strIRfEENS_10StringDataEOT_RNSt3__15arrayIcLm12EEE
-__ZN5realm12GetIndexDataIfE14get_index_dataEfRNSt3__15arrayIcLm12EEE
-__ZN5realm6BpTreeIfE12EraseHandlerD1Ev
-__ZN5realm6BpTreeIfE12EraseHandler15erase_leaf_elemENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeIfE12EraseHandler12destroy_leafENS_6MemRefE
-__ZN5realm6BpTreeIfE12EraseHandler20replace_root_by_leafENS_6MemRefE
-__ZN5realm6BpTreeIfE12EraseHandler26replace_root_by_empty_leafEv
-__ZN5realm6BpTreeIfE12EraseHandlerD0Ev
-__ZN5realm6BpTreeIfE13UpdateHandlerD1Ev
-__ZN5realm6BpTreeIfE13UpdateHandler6updateENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeIfE13UpdateHandlerD0Ev
-__ZN5realm6BpTreeIfE12SliceHandler10slice_leafENS_6MemRefEmmRNS_9AllocatorE
-__ZNK5realm6ColumnIdE21supports_search_indexEv
-__ZN5realm6ColumnIdE18replace_root_arrayENSt3__110unique_ptrINS_5ArrayENS2_14default_deleteIS4_EEEE
-__ZN5realm6BpTreeIdE14SetNullHandlerD1Ev
-__ZN5realm6BpTreeIdE14SetNullHandler6updateENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeIdE14SetNullHandlerD0Ev
-__ZN5realm10BasicArrayIdE12create_arrayEmRNS_9AllocatorE
-__ZN5realm6to_strIRdEENS_10StringDataEOT_RNSt3__15arrayIcLm12EEE
-__ZN5realm12GetIndexDataIdE14get_index_dataEdRNSt3__15arrayIcLm12EEE
-__ZN5realm6BpTreeIdE12EraseHandlerD1Ev
-__ZN5realm6BpTreeIdE12EraseHandler15erase_leaf_elemENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeIdE12EraseHandler12destroy_leafENS_6MemRefE
-__ZN5realm6BpTreeIdE12EraseHandler20replace_root_by_leafENS_6MemRefE
-__ZN5realm6BpTreeIdE12EraseHandler26replace_root_by_empty_leafEv
-__ZN5realm6BpTreeIdE12EraseHandlerD0Ev
-__ZN5realm6BpTreeIdE13UpdateHandlerD1Ev
-__ZN5realm6BpTreeIdE13UpdateHandler6updateENS_6MemRefEPNS_11ArrayParentEmm
-__ZN5realm6BpTreeIdE13UpdateHandlerD0Ev
-__ZN5realm6BpTreeIdE12SliceHandler10slice_leafENS_6MemRefEmmRNS_9AllocatorE
-__ZN5realm6ColumnINS_4util8OptionalIxEEE13CreateHandler11create_leafEm
-__ZN5realm6ColumnIfE13CreateHandler11create_leafEm
-__ZN5realm10BasicArrayIfE12create_arrayENS_5Array4TypeEbmfRNS_9AllocatorE
-__ZN5realm6ColumnIdE13CreateHandler11create_leafEm
-__ZN5realm10BasicArrayIdE12create_arrayENS_5Array4TypeEbmdRNS_9AllocatorE
 __ZTSN5realm5Table21InsertSubtableColumnsE
 __ZTSN5realm5Table15SubtableUpdaterE
 __ZTIN5realm5Table15SubtableUpdaterE
@@ -9964,18 +8742,9 @@ __ZTSN5realm6ColumnIfE13CreateHandlerE
 __ZTIN5realm6ColumnIfE13CreateHandlerE
 __ZTSN5realm6ColumnIdE13CreateHandlerE
 __ZTIN5realm6ColumnIdE13CreateHandlerE
-__ZNK5realm13TableViewBase7get_intEmm
-__ZNK5realm13TableViewBase9get_floatEmm
-__ZNK5realm13TableViewBase10get_doubleEmm
-__ZNK5realm13TableViewBase10get_stringEmm
-__ZNK5realm13TableViewBase10get_binaryEmm
-__ZNK5realm13TableViewBase13get_timestampEmm
-__ZN5realm13TableViewBaseD1Ev
-__ZN5realm13TableViewBaseD0Ev
 __ZZN5realm15sequence_lengthEcE7lengths
 __ZZN5realm12utf8_compareENS_10StringDataES0_E28collation_order_core_similar
 __ZZN5realm12utf8_compareENS_10StringDataES0_E20collation_order_core
-__ZN5realm4util5MutexD1Ev
 __GLOBAL__sub_I_utilities.cpp
 __ZN12_GLOBAL__N_1L15a_popcount_bitsE
 __ZZN5realm8fastrandEybE1m
@@ -9992,14 +8761,8 @@ __ZNSt3__16__sortIRZN5realm10RowIndexes7do_sortERKNS1_14SortDescriptorES5_E3$_2P
 __ZNSt3__17__sort4IRZN5realm10RowIndexes7do_sortERKNS1_14SortDescriptorES5_E3$_2PN12_GLOBAL__N_19IndexPairEEEjT0_SB_SB_SB_T_
 __ZNSt3__127__insertion_sort_incompleteIRZN5realm10RowIndexes7do_sortERKNS1_14SortDescriptorES5_E3$_2PN12_GLOBAL__N_19IndexPairEEEbT0_SB_T_
 __ZN12_GLOBAL__N_115InputStreamImplD1Ev
-__ZN5realm18TrivialReplicationD1Ev
-__ZN5realm18TrivialReplicationD0Ev
 __ZN12_GLOBAL__N_115InputStreamImpl10next_blockERPKcS3_
 __ZN12_GLOBAL__N_115InputStreamImplD0Ev
-__ZN5realm11Replication18TransactLogApplier12select_tableEmiPKm
-__ZN5realm11Replication18TransactLogApplier16select_link_listEmmm
-__ZN5realm11Replication18TransactLogApplier13set_link_typeEmNS_8LinkTypeE
-__ZN5realm11Replication18TransactLogApplier17select_descriptorEiPKm
 __ZTVN12_GLOBAL__N_115InputStreamImplE
 __ZTSN12_GLOBAL__N_115InputStreamImplE
 __ZTIN12_GLOBAL__N_115InputStreamImplE

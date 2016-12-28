@@ -8,6 +8,7 @@
 
 import UIKit
 import pop
+import RealmSwift
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate{
     //UI
@@ -18,6 +19,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var pageControll: UIPageControl!
     
     //var
+    var months = realm.objects(Month.self)
+    
     
     //let
     private let insetHeight:CGFloat = 232
@@ -25,7 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         //UI初始化
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()

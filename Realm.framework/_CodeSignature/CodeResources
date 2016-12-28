@@ -4,17 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>08A3F4AC-030B-35E9-B217-09E082EB3832.bcsymbolmap</key>
+		<key>493B1463-5846-38E2-8EE9-04EF23BAE7BD.bcsymbolmap</key>
 		<data>
-		PA8wfxBi5VIRYRGX6H9+kREwwms=
+		Igs2uUTeCeaP/cewx7xq8T+M02Q=
+		</data>
+		<key>C3E09EB3-519E-3B73-B368-E742467075E7.bcsymbolmap</key>
+		<data>
+		TBUri7lon8CgI0wLmdBsVhsD2TE=
 		</data>
 		<key>CHANGELOG.md</key>
 		<data>
-		JEjORuBSzo781E6HoXy97vay5ME=
-		</data>
-		<key>EBFD683A-190D-39A5-BC2C-D1B5E43015F7.bcsymbolmap</key>
-		<data>
-		GFRZFLSPXFEq5QiXGihEbpy/cMg=
+		AiHFYGQjKCSY9Mju2Phg55uic5o=
 		</data>
 		<key>Headers/RLMArray.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/RLMConstants.h</key>
 		<data>
-		h1khzQk5My7pZpt8MflP7GlCSrU=
+		zEXFGqdb+Qf/cdi4pMP1evU2ZYE=
 		</data>
 		<key>Headers/RLMMigration.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/RLMSyncCredentials.h</key>
 		<data>
-		foG++rDbpZBYOd59YvEaXUibk8c=
+		IOdkgA8oattEZYKRLU0khc8tZdo=
 		</data>
 		<key>Headers/RLMSyncManager.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/RLMSyncUtil.h</key>
 		<data>
-		eK8F8HVqxgj6ATVoC2KEUBRQYKg=
+		sFK3PGpNNunSbL2GX/2zYQS2BHU=
 		</data>
 		<key>Headers/Realm.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dm0JQZ9fk7iVfq5kLKZUtKIJjOU=
+		+9oYu5nUEfKt9r1d7UBr71n7X3w=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>PrivateHeaders/RLMSyncUtil_Private.h</key>
 		<data>
-		rjryuUsoT8gYUeSYuaAXxgHIIlU=
+		0LmvfLIe9Fk1dz8EXO6d0Fzmq+w=
 		</data>
 		<key>strip-frameworks.sh</key>
 		<data>
@@ -195,37 +195,37 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>08A3F4AC-030B-35E9-B217-09E082EB3832.bcsymbolmap</key>
+		<key>493B1463-5846-38E2-8EE9-04EF23BAE7BD.bcsymbolmap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PA8wfxBi5VIRYRGX6H9+kREwwms=
+			Igs2uUTeCeaP/cewx7xq8T+M02Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			DLyza/ziyTAjVgYp/tN06dXSG379l9wbeVLDVAfxXz8=
+			7Y6D+mgOf2c70qRdkVaeyZZnlQDJlXJNY0kvRtBDhXM=
+			</data>
+		</dict>
+		<key>C3E09EB3-519E-3B73-B368-E742467075E7.bcsymbolmap</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TBUri7lon8CgI0wLmdBsVhsD2TE=
+			</data>
+			<key>hash2</key>
+			<data>
+			HsDU2b24zcGdo5BTFoWAn4X+PQQt6kNftLb0ilBV3f0=
 			</data>
 		</dict>
 		<key>CHANGELOG.md</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JEjORuBSzo781E6HoXy97vay5ME=
+			AiHFYGQjKCSY9Mju2Phg55uic5o=
 			</data>
 			<key>hash2</key>
 			<data>
-			dul8nCT5RhElIndDL+Uciywx759RIMsRBhBcfCEKWvM=
-			</data>
-		</dict>
-		<key>EBFD683A-190D-39A5-BC2C-D1B5E43015F7.bcsymbolmap</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GFRZFLSPXFEq5QiXGihEbpy/cMg=
-			</data>
-			<key>hash2</key>
-			<data>
-			PkbnBf0OHx9DJ7NsHMI/OfZVQLfOClc0gPW8AjIsV5c=
+			ti4mzReGTDhhJ9GgpK3Bc9LoWv7alYZfK5Q9J+9XsC4=
 			</data>
 		</dict>
 		<key>Headers/RLMArray.h</key>
@@ -254,11 +254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h1khzQk5My7pZpt8MflP7GlCSrU=
+			zEXFGqdb+Qf/cdi4pMP1evU2ZYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			nOK09WnmDqkyHkr8uoKtWTJZKBfTp5tSYzbEcYkGv70=
+			Wuoh8cW/LahhxtQ+V3XJthLaMoP/tlUQxLKT6bIoIj0=
 			</data>
 		</dict>
 		<key>Headers/RLMMigration.h</key>
@@ -419,11 +419,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			foG++rDbpZBYOd59YvEaXUibk8c=
+			IOdkgA8oattEZYKRLU0khc8tZdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			zqbo0rPBI6KJBRc4bf8an0oC6+e54x6giVnRGHVG0Z8=
+			nWQMdSKFXlfXGHw7XeL3kUlqfQToEUzzCgrQV3uMnJA=
 			</data>
 		</dict>
 		<key>Headers/RLMSyncManager.h</key>
@@ -474,11 +474,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eK8F8HVqxgj6ATVoC2KEUBRQYKg=
+			sFK3PGpNNunSbL2GX/2zYQS2BHU=
 			</data>
 			<key>hash2</key>
 			<data>
-			RZQQmnAnhXaX3YO1MhnhiyiVxlSHHwsMLeUK1TyWTcA=
+			rGZMCLtYhoJB2KrKk0uGrAobDpF4ovOhPI3AIYfj4oU=
 			</data>
 		</dict>
 		<key>Headers/Realm.h</key>
@@ -683,11 +683,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rjryuUsoT8gYUeSYuaAXxgHIIlU=
+			0LmvfLIe9Fk1dz8EXO6d0Fzmq+w=
 			</data>
 			<key>hash2</key>
 			<data>
-			pMrv4nvYddDE3UNVq6KMUv9/pLRLVPlcGqgxuPSRn/M=
+			fA1V7j+A07Wv4vMbdZB85w5/3h5u+TtEIA20AHP0y5I=
 			</data>
 		</dict>
 		<key>strip-frameworks.sh</key>
