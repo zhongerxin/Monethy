@@ -12,9 +12,17 @@
 		63194F3C1DE67673005ABC69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63194F3B1DE67673005ABC69 /* AppDelegate.swift */; };
 		63194F3E1DE67673005ABC69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63194F3D1DE67673005ABC69 /* ViewController.swift */; };
 		63194F461DE67673005ABC69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63194F441DE67673005ABC69 /* LaunchScreen.storyboard */; };
+		632020171E2E684100E31DF1 /* AddRecordCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632020161E2E684100E31DF1 /* AddRecordCardViewController.swift */; };
+		633CF1911E34CFB300554758 /* SelectedDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633CF18F1E34CFB300554758 /* SelectedDateViewController.swift */; };
+		633CF1921E34CFB300554758 /* SelectedDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633CF1901E34CFB300554758 /* SelectedDateViewController.xib */; };
 		634C32CF1E132DAC00E64431 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C32CE1E132DAC00E64431 /* Record.swift */; };
+		635D80331E14968900E60180 /* DateToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D80321E14968900E60180 /* DateToInt.swift */; };
+		635E486C1E374D250047C10F /* EditRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635E486B1E374D250047C10F /* EditRecordsViewController.swift */; };
+		636C7D041E364E8400793E0F /* RecordsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C7D031E364E8400793E0F /* RecordsTableViewCell.swift */; };
+		637F54A61E1E945E004A5885 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F54A51E1E945E004A5885 /* AddAccountViewController.swift */; };
 		638CAAF01DF8E255003FDE11 /* YearChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */; };
 		638CAAF11DF8E255003FDE11 /* YearChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638CAAEF1DF8E255003FDE11 /* YearChartViewController.xib */; };
+		63AB192E1E418C7B00917A2D /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB192D1E418C7B00917A2D /* CardsTableViewCell.swift */; };
 		63CB185A1DEA8B250014579A /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB18591DEA8B250014579A /* ExampleTableViewController.swift */; };
 		63CB5B451E133C84002F4C82 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CB5B431E133C84002F4C82 /* Realm.framework */; };
 		63CB5B461E133C84002F4C82 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63CB5B431E133C84002F4C82 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -29,6 +37,8 @@
 		63E701B01DF6FA0C000683CF /* SumMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E701AE1DF6FA0C000683CF /* SumMoneyViewController.swift */; };
 		63E701B11DF6FA0C000683CF /* SumMoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E701AF1DF6FA0C000683CF /* SumMoneyViewController.xib */; };
 		63E701B31DF6FB11000683CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E701B21DF6FB11000683CF /* Assets.xcassets */; };
+		63F0B1841E4C9A0700DFD67B /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0B1821E4C9A0700DFD67B /* PickerViewController.swift */; };
+		63F0B1851E4C9A0700DFD67B /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F0B1831E4C9A0700DFD67B /* PickerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,11 +66,19 @@
 		63194F3D1DE67673005ABC69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63194F451DE67673005ABC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63194F471DE67673005ABC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632020161E2E684100E31DF1 /* AddRecordCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordCardViewController.swift; sourceTree = "<group>"; };
+		633CF18F1E34CFB300554758 /* SelectedDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedDateViewController.swift; sourceTree = "<group>"; };
+		633CF1901E34CFB300554758 /* SelectedDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedDateViewController.xib; sourceTree = "<group>"; };
 		634C32CE1E132DAC00E64431 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		635D80321E14968900E60180 /* DateToInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateToInt.swift; sourceTree = "<group>"; };
+		635E486B1E374D250047C10F /* EditRecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditRecordsViewController.swift; sourceTree = "<group>"; };
+		636C7D031E364E8400793E0F /* RecordsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsTableViewCell.swift; sourceTree = "<group>"; };
 		637905C51DE9DC2500DB2AD5 /* DINCond-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINCond-Black.otf"; path = "Font/DINCond-Black.otf"; sourceTree = "<group>"; };
 		637905C61DE9DC2500DB2AD5 /* DINCond-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINCond-Regular.otf"; path = "Font/DINCond-Regular.otf"; sourceTree = "<group>"; };
+		637F54A51E1E945E004A5885 /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearChartViewController.swift; sourceTree = "<group>"; };
 		638CAAEF1DF8E255003FDE11 /* YearChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearChartViewController.xib; sourceTree = "<group>"; };
+		63AB192D1E418C7B00917A2D /* CardsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
 		63CB18591DEA8B250014579A /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
 		63CB5B431E133C84002F4C82 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		63CB5B441E133C84002F4C82 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
@@ -71,6 +89,8 @@
 		63E701AE1DF6FA0C000683CF /* SumMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumMoneyViewController.swift; sourceTree = "<group>"; };
 		63E701AF1DF6FA0C000683CF /* SumMoneyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SumMoneyViewController.xib; sourceTree = "<group>"; };
 		63E701B21DF6FB11000683CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63F0B1821E4C9A0700DFD67B /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		63F0B1831E4C9A0700DFD67B /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +151,7 @@
 			children = (
 				63E701AD1DF6F9D5000683CF /* Controller */,
 				63D40C1F1DF701330062A74A /* View */,
-				63D0AEB61E115E6800F4FCD7 /* Data */,
+				639589961E13B759006EB980 /* Model */,
 				63194F3B1DE67673005ABC69 /* AppDelegate.swift */,
 				63E701B21DF6FB11000683CF /* Assets.xcassets */,
 				63194F471DE67673005ABC69 /* Info.plist */,
@@ -149,14 +169,15 @@
 			path = Monthey;
 			sourceTree = "<group>";
 		};
-		63D0AEB61E115E6800F4FCD7 /* Data */ = {
+		639589961E13B759006EB980 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				63D0AEB01E115E2D00F4FCD7 /* Account.swift */,
 				63D0AEB21E115E3E00F4FCD7 /* Month.swift */,
 				634C32CE1E132DAC00E64431 /* Record.swift */,
+				635D80321E14968900E60180 /* DateToInt.swift */,
 			);
-			name = Data;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		63D40C1F1DF701330062A74A /* View */ = {
@@ -166,6 +187,8 @@
 				63E701AF1DF6FA0C000683CF /* SumMoneyViewController.xib */,
 				638CAAEF1DF8E255003FDE11 /* YearChartViewController.xib */,
 				63194F441DE67673005ABC69 /* LaunchScreen.storyboard */,
+				633CF1901E34CFB300554758 /* SelectedDateViewController.xib */,
+				63F0B1831E4C9A0700DFD67B /* PickerViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -178,6 +201,13 @@
 				638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */,
 				63E093461E00E97B0067DB67 /* MonthDetailViewController.swift */,
 				63127B041E03B746004ED653 /* AccountsViewController.swift */,
+				637F54A51E1E945E004A5885 /* AddAccountViewController.swift */,
+				632020161E2E684100E31DF1 /* AddRecordCardViewController.swift */,
+				635E486B1E374D250047C10F /* EditRecordsViewController.swift */,
+				633CF18F1E34CFB300554758 /* SelectedDateViewController.swift */,
+				63AB192D1E418C7B00917A2D /* CardsTableViewCell.swift */,
+				636C7D031E364E8400793E0F /* RecordsTableViewCell.swift */,
+				63F0B1821E4C9A0700DFD67B /* PickerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -248,10 +278,12 @@
 			files = (
 				63DB5C1E1DE9DE1200CA27E0 /* DINCond-Black.otf in Resources */,
 				63E701B11DF6FA0C000683CF /* SumMoneyViewController.xib in Resources */,
+				633CF1921E34CFB300554758 /* SelectedDateViewController.xib in Resources */,
 				63DB5C1F1DE9DE1200CA27E0 /* DINCond-Regular.otf in Resources */,
 				63D40C1E1DF6FE660062A74A /* Main.storyboard in Resources */,
 				63194F461DE67673005ABC69 /* LaunchScreen.storyboard in Resources */,
 				63E701B31DF6FB11000683CF /* Assets.xcassets in Resources */,
+				63F0B1851E4C9A0700DFD67B /* PickerViewController.xib in Resources */,
 				638CAAF11DF8E255003FDE11 /* YearChartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,15 +344,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E093471E00E97B0067DB67 /* MonthDetailViewController.swift in Sources */,
+				635E486C1E374D250047C10F /* EditRecordsViewController.swift in Sources */,
 				638CAAF01DF8E255003FDE11 /* YearChartViewController.swift in Sources */,
 				634C32CF1E132DAC00E64431 /* Record.swift in Sources */,
 				63D0AEB31E115E3E00F4FCD7 /* Month.swift in Sources */,
 				63CB185A1DEA8B250014579A /* ExampleTableViewController.swift in Sources */,
 				63194F3E1DE67673005ABC69 /* ViewController.swift in Sources */,
+				636C7D041E364E8400793E0F /* RecordsTableViewCell.swift in Sources */,
 				63194F3C1DE67673005ABC69 /* AppDelegate.swift in Sources */,
+				635D80331E14968900E60180 /* DateToInt.swift in Sources */,
+				632020171E2E684100E31DF1 /* AddRecordCardViewController.swift in Sources */,
 				63D0AEB11E115E2D00F4FCD7 /* Account.swift in Sources */,
+				63F0B1841E4C9A0700DFD67B /* PickerViewController.swift in Sources */,
 				63127B051E03B746004ED653 /* AccountsViewController.swift in Sources */,
+				637F54A61E1E945E004A5885 /* AddAccountViewController.swift in Sources */,
 				63E701B01DF6FA0C000683CF /* SumMoneyViewController.swift in Sources */,
+				63AB192E1E418C7B00917A2D /* CardsTableViewCell.swift in Sources */,
+				633CF1911E34CFB300554758 /* SelectedDateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +485,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C5943E33S4;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -466,6 +507,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C5943E33S4;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

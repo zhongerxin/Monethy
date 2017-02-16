@@ -151,7 +151,6 @@ class YearChartViewController: UIViewController, IAxisValueFormatter, ChartViewD
         animation?.toValue = toValue
         animation?.duration = duration
         animation?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-//        animateView.layer.pop_add(scaleAnimation, forKey: "size")
         animateView.layer.pop_add(animation, forKey: "opacity")
         animation?.completionBlock = completion
     }

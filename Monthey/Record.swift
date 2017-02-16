@@ -16,7 +16,4 @@ class Record: Object {
     let accountOwners = LinkingObjects(fromType: Account.self, property: "records")
     let monthOwners = LinkingObjects(fromType: Month.self, property: "records")
     
-//  override static func ignoredProperties() -> [String] {
-//    return []
-//  }
 }

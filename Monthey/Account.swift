@@ -10,10 +10,13 @@ import Foundation
 import RealmSwift
 
 class Account: Object {
+    
     dynamic var id = 0
     dynamic var name = ""
     dynamic var createdAt = NSDate()
     dynamic var isDelete = false
+    dynamic var isShow = true
+    dynamic var color = ""
     let records = List<Record>()
     
     override static func primaryKey() -> String? {
@@ -24,7 +27,4 @@ class Account: Object {
         return ["name"]
     }
     
-//  override static func ignoredProperties() -> [String] {
-//    return []
-//  }
 }
