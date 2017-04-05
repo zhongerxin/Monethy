@@ -89,6 +89,13 @@ class AddAccountViewController: UIViewController,AddAccountViewDelegate,UIScroll
         }
         return newLength <= limitLength
     }
+<<<<<<< HEAD
+=======
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        inputAccountName.text = "￥"
+        return true
+    }
+>>>>>>> origin/master
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         inputAccountName.resignFirstResponder()

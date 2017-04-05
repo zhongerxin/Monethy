@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 import Dispatch
 
+<<<<<<< HEAD
 
 var preTapedButton:UIButton!
 var currentMonthNumber = 0
@@ -17,23 +18,38 @@ var saveMonthNumber = 0
 var twoYearNumbers = [Int]()
 var recordsAmountInputs = [String]()
 
+=======
+>>>>>>> origin/master
 class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource,AddRecordViewDelegate {
     
     //var
     var delegate:RecordViewDelegate?
     var cellDeleagte:RecordsTableViewCell?
+<<<<<<< HEAD
     var selectDlegate1:SelectDateDelegate?
     var selectDlegate2:SelectDateDelegate?
     
     var currentYearNumber = 0
 
+=======
+    
+    var currentYearNumber = 0
+    var threeYearNumbers = [Int]()
+    
+    var preTapedButton:UIButton!
+    
+>>>>>>> origin/master
     var accounts = realm.objects(Account.self)
     var activeAccounts = realm.objects(Account.self).filter("isDelete = false")
     var showAccounts = realm.objects(Account.self).filter("isShow = true AND isDelete = false")
     
     var notificationToken: NotificationToken? = nil
+<<<<<<< HEAD
     
     var saveYearNumber = 0
+=======
+
+>>>>>>> origin/master
     //ui
     @IBOutlet weak var selectDateScroll: UIScrollView!
     @IBOutlet weak var pageControll: UIPageControl!
@@ -42,6 +58,7 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
     
     //let
     private let insetHeight:CGFloat = 86
+<<<<<<< HEAD
     let currentDate = NSDate()
     
     
@@ -52,6 +69,15 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
         twoYearNumbers = [currentYearNumber - 1,currentYearNumber]
         currentMonthNumber = DateToString(currentDate: currentDate as Date).dateToString().month
         
+=======
+    let currentDate = NSDate()    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(showAccounts)
+        //初始化时间
+        currentYearNumber = DateToString(currentDate: currentDate as Date).dateToString().year
+        threeYearNumbers = [currentYearNumber - 1,currentYearNumber,currentYearNumber + 1]
+>>>>>>> origin/master
         setDateScroll()
         recordsTableview.contentInset.bottom = insetHeight
         //通知
@@ -59,6 +85,7 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
             switch changes {
             case .initial( _):
                 break
+<<<<<<< HEAD
             case .update(_ , let deletions, let insertions, let modifications):
 //                self.recordsTableview.beginUpdates()
                 print(deletions,insertions)
@@ -70,6 +97,11 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
                 }
                 print(recordsAmountInputs)
                 if deletions == [] && modifications == [] {
+=======
+            case .update(_ , let deletions, _, _):
+//                self.recordsTableview.beginUpdates()
+                if deletions == [] {
+>>>>>>> origin/master
                     self.recordsTableview.reloadData()
                 }
 //                self.recordsTableview.endUpdates()
@@ -79,6 +111,10 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
             }
         }
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> origin/master
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -98,9 +134,15 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: "recordCell", for: indexPath) as! RecordsTableViewCell
         cellDeleagte = cell
         cell.addOrMinusButton.addTarget(self, action:#selector(self.touchUpMinusButton(sender:)) , for: .touchUpInside)
+<<<<<<< HEAD
         cell.delegate = self
         if indexPath.row == showAccounts.count{
             cellDeleagte?.setInputAmountField()
+=======
+        
+        if indexPath.row == showAccounts.count{
+            print("我是",indexPath.row)
+>>>>>>> origin/master
             cellDeleagte?.setCellToInsertRow()
             if showAccounts.count == activeAccounts.count {
                 cell.isHidden = true
@@ -110,11 +152,15 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
         let account = showAccounts[indexPath.row]
         cell.accountNameLabel.text = account.name
         cell.addOrMinusButton.tag = account.id
+<<<<<<< HEAD
         cell.inputAmountField.text = recordsAmountInputs[indexPath.row]
         cellDeleagte?.setDefaultRow()
         if cell.inputAmountField.text == "" {
             cellDeleagte?.setInputAmountField()
         }
+=======
+        cellDeleagte?.setDefaultRow()
+>>>>>>> origin/master
         return cell
     }
     
@@ -154,6 +200,7 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
         let scrollHeight:CGFloat = selectDateScroll.frame.height
         let scrollWidth = selectDateScroll.frame.width
         let viewWidth = view.bounds.width - 20
+<<<<<<< HEAD
         selectDateScroll.contentSize =  CGSize(width:2*viewWidth,height:scrollHeight)
         selectDateScroll.autoresizingMask = [.flexibleWidth]
         selectDateScroll.isPagingEnabled = true
@@ -167,6 +214,16 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
             default:
                 selectDlegate2 = subView
             }
+=======
+        print(viewWidth)
+        print(scrollWidth)
+        selectDateScroll.contentSize =  CGSize(width:3*viewWidth,height:scrollHeight)
+        selectDateScroll.autoresizingMask = [.flexibleWidth]
+        selectDateScroll.isPagingEnabled = true
+        for i in 0 ..< 3 {
+            let frame = CGRect(x:CGFloat(viewWidth * CGFloat(i)),y:CGFloat(0),width:scrollWidth,height:scrollHeight)
+            let subView = SelectedDateViewController()
+>>>>>>> origin/master
             subView.stackSpacing = viewWidth * 18 / 355
             subView.pageTag = i
             subView.view.tag = i
@@ -185,6 +242,7 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
     }
     
     //交互
+<<<<<<< HEAD
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let xOffset = selectDateScroll.contentOffset.x
@@ -196,6 +254,36 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
         }
         titleLabel.text = "\(twoYearNumbers[pageControll.currentPage])年"
         saveYearNumber = twoYearNumbers[pageControll.currentPage]
+=======
+    @IBAction func tapedMonthButton(_ sender: UIButton) {
+        if sender.title(for: .normal) != "" {
+            if let button = preTapedButton {
+                button.isSelected = false
+                button.titleLabel?.font = UIFont(name: "PingFang SC", size: 14)
+            }
+            sender.isSelected = true
+            sender.setTitle("\(sender.tag)", for: .selected)
+            sender.titleLabel?.font = UIFont(name: "PingFangSC-Semibold", size: 16)
+            preTapedButton = sender
+        }
+        if sender.superview?.superview?.superview?.tag == 0 {
+            print("我是第一页")
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let xOffset = selectDateScroll.contentOffset.x
+        print(xOffset)
+        switch xOffset {
+        case _ where xOffset < selectDateScroll.frame.width:
+            pageControll.currentPage = 0
+        case selectDateScroll.frame.width ..< 2 * selectDateScroll.frame.width:
+            pageControll.currentPage = 1
+        default:
+            pageControll.currentPage = 2
+        }
+        titleLabel.text = "\(threeYearNumbers[pageControll.currentPage])年"
+>>>>>>> origin/master
     }
     
     @IBAction func didTapCancelButton(_ sender: Any) {
@@ -209,10 +297,15 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
         selectDateScroll.contentOffset.x = selectDateScroll.frame.width
         pageControll.currentPage = 1
         titleLabel.text = "\(currentYearNumber)年"
+<<<<<<< HEAD
         saveYearNumber = currentYearNumber
     }
     
     
+=======
+    }
+    
+>>>>>>> origin/master
     func resignTextField(){
         view.endEditing(true)
     }
@@ -220,6 +313,7 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
     func setTableView() {
         recordsTableview.contentOffset.y = 0
     }
+<<<<<<< HEAD
     func addRecordsToRealm() {
         let month = Month()
         month.createdAt = currentDate
@@ -289,6 +383,8 @@ class AddRecordCardViewController: UIViewController,UIScrollViewDelegate,UITable
             }
         }
     }
+=======
+>>>>>>> origin/master
 }
 
 protocol AddRecordViewDelegate {
@@ -296,10 +392,13 @@ protocol AddRecordViewDelegate {
     func resignTextField()
     func setShowAccounts()
     func setTableView()
+<<<<<<< HEAD
     func addRecordsToRealm()
     func setMonthButton()
     func resetMonthButton()
     func setAddButtonActive()
     func setRecordsAmountInputs()
     func setCellToIndexPath(cell:RecordsTableViewCell)
+=======
+>>>>>>> origin/master
 }

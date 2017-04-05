@@ -15,10 +15,13 @@ class MonthDetailViewController: UIViewController , UITableViewDelegate, UITable
     //ui
     @IBOutlet weak var pieChartView: PieChartView!
     @IBOutlet weak var accountsTableView: UITableView!
+<<<<<<< HEAD
     @IBOutlet weak var createTimeLabel: UILabel!
     @IBOutlet weak var accountIsDeleteLabel: UILabel!
     @IBOutlet weak var accountNameLabel: UILabel!
     @IBOutlet weak var percentLabel: UILabel!
+=======
+>>>>>>> origin/master
     
     @IBOutlet weak var editRecordBg: UIView!
     @IBOutlet weak var editRecordButton: UIButton!
@@ -33,11 +36,16 @@ class MonthDetailViewController: UIViewController , UITableViewDelegate, UITable
     var buttonBottom:CGFloat!
     var buttonHeight:CGFloat!
     
+<<<<<<< HEAD
     var month:Month!
     var accounts = [String]()
     var moneyNumbers = [Double]()
     var notificationToken: NotificationToken? = nil
     var records:Results<Record>!
+=======
+    var accounts:[String]!
+
+>>>>>>> origin/master
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,10 +67,14 @@ class MonthDetailViewController: UIViewController , UITableViewDelegate, UITable
         accountsTableView.separatorStyle = .none
         accountsTableView.contentInset.top = -150
         accountsTableView.contentInset.bottom = 10
+<<<<<<< HEAD
         setCreateTimeLabel()
         setAccountNameLabel()
         setPercentLabel()
         setAccountIsDeleteLabel(isHidden:true)
+=======
+        
+>>>>>>> origin/master
         //editRecord初始化
         editRecordButton.layer.borderColor = UIColor.clear.cgColor
         editRecordBg.layer.cornerRadius = 26
@@ -75,15 +87,19 @@ class MonthDetailViewController: UIViewController , UITableViewDelegate, UITable
         //layout
         buttonHeight = editRecordBgHeight.constant
         buttonBottom = editRecordBgBottom.constant
+<<<<<<< HEAD
     }
     override func viewWillAppear(_ animated: Bool) {
         setPieCharts()
+=======
+>>>>>>> origin/master
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+<<<<<<< HEAD
     //初始化
     func setCreateTimeLabel(){
         let monthNumber = DateToString(currentDate: month.createdAt as Date).dateToString().month
@@ -100,6 +116,8 @@ class MonthDetailViewController: UIViewController , UITableViewDelegate, UITable
     func setAccountIsDeleteLabel(isHidden:Bool){
         accountIsDeleteLabel.isHidden = isHidden
     }
+=======
+>>>>>>> origin/master
     
     //渐变
     func setPieCharts(){
@@ -211,6 +229,81 @@ class MonthDetailViewController: UIViewController , UITableViewDelegate, UITable
         }
     }
 
+    //animation
+    func coreAnimation(_ sender: Bool) {
+        let cardHeight:CGFloat = view.frame.height * 0.85
+        var scale:CGFloat!
+        var alpha:CGFloat!
+        
+        switch sender {
+        case true:
+            scale = 1
+            alpha = 0.01
+            self.editRecordBgWidth.constant = self.view.frame.width - 20
+            self.editRecordBgHeight.constant = cardHeight
+            self.editRecordBgBottom.constant = self.view.center.y - cardHeight/2
+            self.editRecordButtonBottom.constant = 16
+        default:
+            scale = 0.01
+            alpha = 1
+            self.editRecordBgWidth.constant = buttonHeight
+            self.editRecordBgHeight.constant = buttonHeight
+            self.editRecordBgBottom.constant = buttonBottom
+            self.editRecordButtonBottom.constant = 0
+        }
+        UIView.animate(withDuration: 0.3, delay: 0, options:.curveEaseOut, animations: {
+            self.view.layoutIfNeeded()
+            self.editRecordButton.isSelected = sender
+            self.navigationController?.navigationBar.alpha = alpha
+            self.cardView.transform = CGAffineTransform(scaleX: 1, y: scale)
+            self.cardView.alpha = scale
+        }, completion: {_ in
+        })
+    }
+    
+    func popAnimation(_ sender:Bool) {
+        var toColor:CGColor!
+        var toRadius:Int!
+        //        var toAlpha:CGFloat
+        switch sender {
+        case true:
+            toColor = UIColor.white.cgColor
+            toRadius = 4
+        //            toAlpha = 0.8
+        default:
+            toColor = UIColor.clear.cgColor
+            toRadius = 26
+            //            toAlpha = 0.0
+        }
+        
+        let bordedrAnimation = POPBasicAnimation(propertyNamed: kPOPLayerBorderColor)
+        bordedrAnimation?.toValue = toColor
+        bordedrAnimation?.duration = 0.3
+        bordedrAnimation?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        editRecordButton.layer.pop_add(bordedrAnimation, forKey: "borderColor")
+        
+        let cornerAnimation = POPBasicAnimation(propertyNamed: kPOPLayerCornerRadius)
+        cornerAnimation?.toValue = toRadius
+        cornerAnimation?.duration = 0.3
+        cornerAnimation?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        editRecordBg.layer.pop_add(cornerAnimation, forKey: "cornerRadius")
+    }
+    //tap
+    @IBAction func tapEditButton(_ sender: UIButton) {
+        
+        switch sender.state.rawValue {
+        case 1:
+            coreAnimation(true)
+            popAnimation(true)
+        default:
+            coreAnimation(false)
+            popAnimation(false)
+        }
+    }
+
+    
+    
+    
     //animation
     func coreAnimation(_ sender: Bool) {
         let cardHeight:CGFloat = view.frame.height * 0.85

@@ -17,7 +17,10 @@
 		632020171E2E684100E31DF1 /* AddRecordCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632020161E2E684100E31DF1 /* AddRecordCardViewController.swift */; };
 		633CF1911E34CFB300554758 /* SelectedDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633CF18F1E34CFB300554758 /* SelectedDateViewController.swift */; };
 		633CF1921E34CFB300554758 /* SelectedDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633CF1901E34CFB300554758 /* SelectedDateViewController.xib */; };
+<<<<<<< HEAD
 		634C0C431E618EBC00C612BE /* MonthHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C0C421E618EBC00C612BE /* MonthHeaderCell.swift */; };
+=======
+>>>>>>> origin/master
 		634C32CF1E132DAC00E64431 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C32CE1E132DAC00E64431 /* Record.swift */; };
 		635D80331E14968900E60180 /* DateToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D80321E14968900E60180 /* DateToInt.swift */; };
 		635E486C1E374D250047C10F /* EditRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635E486B1E374D250047C10F /* EditRecordsViewController.swift */; };
@@ -25,7 +28,10 @@
 		637F54A61E1E945E004A5885 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F54A51E1E945E004A5885 /* AddAccountViewController.swift */; };
 		638CAAF01DF8E255003FDE11 /* YearChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */; };
 		638CAAF11DF8E255003FDE11 /* YearChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638CAAEF1DF8E255003FDE11 /* YearChartViewController.xib */; };
+<<<<<<< HEAD
 		639FAFFB1E5EC654001E2144 /* MonthRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FAFFA1E5EC654001E2144 /* MonthRecordTableViewCell.swift */; };
+=======
+>>>>>>> origin/master
 		63AB192E1E418C7B00917A2D /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB192D1E418C7B00917A2D /* CardsTableViewCell.swift */; };
 		63CB185A1DEA8B250014579A /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB18591DEA8B250014579A /* ExampleTableViewController.swift */; };
 		63CB5B451E133C84002F4C82 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CB5B431E133C84002F4C82 /* Realm.framework */; };
@@ -75,7 +81,10 @@
 		632020161E2E684100E31DF1 /* AddRecordCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordCardViewController.swift; sourceTree = "<group>"; };
 		633CF18F1E34CFB300554758 /* SelectedDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedDateViewController.swift; sourceTree = "<group>"; };
 		633CF1901E34CFB300554758 /* SelectedDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedDateViewController.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		634C0C421E618EBC00C612BE /* MonthHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthHeaderCell.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> origin/master
 		634C32CE1E132DAC00E64431 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		635D80321E14968900E60180 /* DateToInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateToInt.swift; sourceTree = "<group>"; };
 		635E486B1E374D250047C10F /* EditRecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditRecordsViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +94,10 @@
 		637F54A51E1E945E004A5885 /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		638CAAEE1DF8E255003FDE11 /* YearChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearChartViewController.swift; sourceTree = "<group>"; };
 		638CAAEF1DF8E255003FDE11 /* YearChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearChartViewController.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		639FAFFA1E5EC654001E2144 /* MonthRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthRecordTableViewCell.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> origin/master
 		63AB192D1E418C7B00917A2D /* CardsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
 		63CB18591DEA8B250014579A /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
 		63CB5B431E133C84002F4C82 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
@@ -216,10 +228,13 @@
 				63AB192D1E418C7B00917A2D /* CardsTableViewCell.swift */,
 				636C7D031E364E8400793E0F /* RecordsTableViewCell.swift */,
 				63F0B1821E4C9A0700DFD67B /* PickerViewController.swift */,
+<<<<<<< HEAD
 				639FAFFA1E5EC654001E2144 /* MonthRecordTableViewCell.swift */,
 				634C0C421E618EBC00C612BE /* MonthHeaderCell.swift */,
 				630E5C521E64622F000398CD /* AccountRecordCell.swift */,
 				630E5C541E646975000398CD /* AccountRecordHeaderCell.swift */,
+=======
+>>>>>>> origin/master
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -366,7 +381,10 @@
 				636C7D041E364E8400793E0F /* RecordsTableViewCell.swift in Sources */,
 				63194F3C1DE67673005ABC69 /* AppDelegate.swift in Sources */,
 				635D80331E14968900E60180 /* DateToInt.swift in Sources */,
+<<<<<<< HEAD
 				639FAFFB1E5EC654001E2144 /* MonthRecordTableViewCell.swift in Sources */,
+=======
+>>>>>>> origin/master
 				632020171E2E684100E31DF1 /* AddRecordCardViewController.swift in Sources */,
 				63D0AEB11E115E2D00F4FCD7 /* Account.swift in Sources */,
 				63F0B1841E4C9A0700DFD67B /* PickerViewController.swift in Sources */,
@@ -374,9 +392,13 @@
 				637F54A61E1E945E004A5885 /* AddAccountViewController.swift in Sources */,
 				63E701B01DF6FA0C000683CF /* SumMoneyViewController.swift in Sources */,
 				63AB192E1E418C7B00917A2D /* CardsTableViewCell.swift in Sources */,
+<<<<<<< HEAD
 				630E5C531E64622F000398CD /* AccountRecordCell.swift in Sources */,
 				633CF1911E34CFB300554758 /* SelectedDateViewController.swift in Sources */,
 				634C0C431E618EBC00C612BE /* MonthHeaderCell.swift in Sources */,
+=======
+				633CF1911E34CFB300554758 /* SelectedDateViewController.swift in Sources */,
+>>>>>>> origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

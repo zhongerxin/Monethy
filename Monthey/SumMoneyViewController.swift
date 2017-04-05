@@ -38,6 +38,7 @@ class SumMoneyViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+<<<<<<< HEAD
     
     func setSumMoneyLabel(){
         if sortMonths.count > 1 {
@@ -47,6 +48,9 @@ class SumMoneyViewController: UIViewController {
             sumMoneyLabel.text = "0"
         }
     }
+=======
+
+>>>>>>> origin/master
 
     /*
     // MARK: - Navigation

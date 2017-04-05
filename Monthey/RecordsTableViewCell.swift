@@ -10,18 +10,29 @@ import UIKit
 
 class RecordsTableViewCell: UITableViewCell,RecordsTableViewDelegate,UITextFieldDelegate {
 
+<<<<<<< HEAD
     @IBOutlet weak var iconLabel: UILabel!
+=======
+    @IBOutlet weak var moneyIconLabel: UILabel!
+>>>>>>> origin/master
     @IBOutlet weak var accountNameLabel: UILabel!
     @IBOutlet weak var inputAmountField: UITextField!
     @IBOutlet weak var addOrMinusButton: UIButton!
    
     var id:Int!
+<<<<<<< HEAD
     var delegate:AddRecordViewDelegate?
+=======
+>>>>>>> origin/master
     
     let limitLength = 15
     
     override func awakeFromNib() {
         super.awakeFromNib()
+<<<<<<< HEAD
+=======
+        setInputAmountField()
+>>>>>>> origin/master
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -39,16 +50,29 @@ class RecordsTableViewCell: UITableViewCell,RecordsTableViewDelegate,UITextField
         switch sender {
         case true:
             let spacerView = UIView(frame:CGRect(x:0, y:0, width:16, height:10))
+<<<<<<< HEAD
             iconLabel.isHidden = false
             inputAmountField.leftView = spacerView
         default:
             let spacerView = UIView(frame:CGRect(x:0, y:0, width:0, height:10))
             inputAmountField.leftView = spacerView
             iconLabel.isHidden = true
+=======
+            moneyIconLabel.isHidden = false
+            inputAmountField.leftView = spacerView
+        default:
+            let spacerView = UIView(frame:CGRect(x:0, y:0, width:0, height:10))
+            moneyIconLabel.isHidden = true
+            inputAmountField.leftView = spacerView
+>>>>>>> origin/master
         }
     }
     
     func setCellToInsertRow() {
+<<<<<<< HEAD
+=======
+        print("gggg")
+>>>>>>> origin/master
         accountNameLabel.alpha = 1
         accountNameLabel.text = "点击加号增加记录"
         inputAmountField.isHidden = true
@@ -67,12 +91,18 @@ class RecordsTableViewCell: UITableViewCell,RecordsTableViewDelegate,UITextField
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+<<<<<<< HEAD
         guard let text = textField.text else { return true }
         inputAmountField.attributedText = NSAttributedString(string: "\(text)", attributes:[NSKernAttributeName:1.5])
+=======
+        let invalidCharacters = CharacterSet(charactersIn: "0123456789.").inverted
+        guard let text = textField.text else { return true }
+>>>>>>> origin/master
         let newLength = text.characters.count + string.characters.count - range.length
         if newLength >= 1 {
             isShowMoneyIcon(sender: true)
         } else {
+<<<<<<< HEAD
             
             isShowMoneyIcon(sender: false)
         }
@@ -110,5 +140,15 @@ protocol RecordsTableViewDelegate {
     func setCellToInsertRow()
     func setDefaultRow()
     func setInputAmountField()
+=======
+            isShowMoneyIcon(sender: false)
+        }
+        return string.rangeOfCharacter(from: invalidCharacters, options: [], range: string.startIndex ..< string.endIndex) == nil && newLength <= limitLength
+    }
+
+}
+protocol RecordsTableViewDelegate {
+    func setCellToInsertRow()
+>>>>>>> origin/master
 }
 

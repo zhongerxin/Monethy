@@ -8,6 +8,7 @@
 
 import UIKit
 
+<<<<<<< HEAD
 class SelectedDateViewController: UIViewController,SelectDateDelegate{
     
     var stackSpacing:CGFloat!
@@ -15,6 +16,11 @@ class SelectedDateViewController: UIViewController,SelectDateDelegate{
     var delegate:AddRecordViewDelegate?
     //let
     let currentDate = NSDate()
+=======
+class SelectedDateViewController: UIViewController {
+    var stackSpacing:CGFloat!
+    var pageTag:Int!
+>>>>>>> origin/master
     //ui
     @IBOutlet weak var firstStack: UIStackView!
     @IBOutlet weak var secondStack: UIStackView!
@@ -22,7 +28,11 @@ class SelectedDateViewController: UIViewController,SelectDateDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         setMonthButtons()
+=======
+        setMonthBUttons()
+>>>>>>> origin/master
         secondStack.spacing = stackSpacing
         firstStack.spacing = stackSpacing
     }
@@ -32,6 +42,7 @@ class SelectedDateViewController: UIViewController,SelectDateDelegate{
         // Dispose of any resources that can be recreated.
     }
     @IBAction func tapedMonthButton(_ sender: UIButton) {
+<<<<<<< HEAD
         if sender.title(for: .normal) != "" {
             if let button = preTapedButton {
                 button.isSelected = false
@@ -66,6 +77,20 @@ class SelectedDateViewController: UIViewController,SelectDateDelegate{
         }
     }
     
+=======
+    }
+    
+    //初始化
+    func setMonthBUttons() {
+        for i in monthButtons {
+            if pageTag == 1 {
+                if i.tag == 1 {
+                    setButtonDone(button: i)
+                }
+            }
+        }
+    }
+>>>>>>> origin/master
     func setButtonDone(button:UIButton) {
         button.setBackgroundImage(#imageLiteral(resourceName: "done_bg"), for: .normal)
         button.setTitle("", for: .normal)
@@ -73,7 +98,10 @@ class SelectedDateViewController: UIViewController,SelectDateDelegate{
     
 
 }
+<<<<<<< HEAD
 
 protocol SelectDateDelegate {
     func setMonthButtons()
 }
+=======
+>>>>>>> origin/master

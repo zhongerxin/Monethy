@@ -30,6 +30,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var addRecordBgHeight: NSLayoutConstraint!
     @IBOutlet weak var addRecordBgBottom: NSLayoutConstraint!
     @IBOutlet weak var addRecordButtonBottom: NSLayoutConstraint!
+<<<<<<< HEAD
+=======
+    
+    var buttonBottom:CGFloat!
+    var buttonHeight:CGFloat!
+    
+    //var
+    var months = realm.objects(Month.self)
+    var accounts = realm.objects(Account.self)
+>>>>>>> origin/master
     
     var buttonBottom:CGFloat!
     var buttonHeight:CGFloat!
@@ -49,6 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
+<<<<<<< HEAD
         //Realm初始化
         self.groupYears = self.groupByMonth()
         notificationToken = sortMonths.addNotificationBlock { changes in
@@ -64,6 +75,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 break
             }
         }
+=======
+        
+>>>>>>> origin/master
         //UI初始化
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -98,7 +112,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> origin/master
     //初始化
     func setAddRecord() {
         addRecordButton.layer.borderColor = UIColor.clear.cgColor
@@ -118,6 +135,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         view.addSubview(pickerView.view)
     }
     
+<<<<<<< HEAD
     func groupByMonth() -> [Int]{
         var years = [Int]()
         var groups = [Int]()
@@ -132,6 +150,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return groups
     }
     
+=======
+>>>>>>> origin/master
     //数据部分
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -289,6 +309,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 1:
             delegate?.setShowAccounts()
             delegate?.setTableView()
+<<<<<<< HEAD
             delegate?.setMonthButton()
             delegate?.setRecordsAmountInputs()
             coreAnimation(true)
@@ -308,6 +329,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 popAnimation(false)
             }
             preTapedButton = nil
+=======
+            coreAnimation(true)
+            popAnimation(true)
+            delegate?.setScrollToCurrentYear()
+        default:
+            delegate?.resignTextField()
+            coreAnimation(false)
+            popAnimation(false)
+>>>>>>> origin/master
         }
     }
     
@@ -374,6 +404,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+<<<<<<< HEAD
         switch segue.identifier {
         case "addRecord"? :
             let desinationController = segue.destination as! AddRecordCardViewController
@@ -386,15 +417,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             desinationController.month = month
         default:
             break
+=======
+        if segue.identifier == "addRecord"  {
+            let desinationController = segue.destination as! AddRecordCardViewController
+            delegate = desinationController
+            desinationController.delegate = self
+>>>>>>> origin/master
         }
     }
     //protocol
     func cancelCard() {
+<<<<<<< HEAD
         delegate?.resetMonthButton()
         coreAnimation(false)
         popAnimation(false)
         isAddButtonActive(sender: true)
         preTapedButton = nil
+=======
+        coreAnimation(false)
+        popAnimation(false)
+>>>>>>> origin/master
     }
     
     func appearPickerView(sender:Bool) {
@@ -416,6 +458,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }, completion: {_ in
         })
     }
+<<<<<<< HEAD
     
     func isAddButtonActive(sender:Bool) {
         if sender {
@@ -432,12 +475,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //            addRecordButton.isEnabled = false
 //        }
 //    }
+=======
+>>>>>>> origin/master
 }
 
 protocol RecordViewDelegate {
     func cancelCard()
     func appearPickerView(sender:Bool)
+<<<<<<< HEAD
     func isAddButtonActive(sender:Bool)
 //    func isEnabledAddButton()
+=======
+>>>>>>> origin/master
 }
 

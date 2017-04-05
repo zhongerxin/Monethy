@@ -53,7 +53,10 @@ class AccountsViewController: UIViewController, UITableViewDelegate, UITableView
                 break
             case .update(_ , let deletions, let insertions, let modifications):
                 self.accountsTableView.beginUpdates()
+<<<<<<< HEAD
                 print(self.activeAccounts)
+=======
+>>>>>>> origin/master
                 self.accountsTableView.insertRows(at: insertions.map({ IndexPath(row: $0, section: 0) }), with: .automatic)
                 print(deletions,insertions,modifications)
                 self.accountsTableView.deleteRows(at: deletions.map({ IndexPath(row: $0, section: 0) }), with: .automatic)
