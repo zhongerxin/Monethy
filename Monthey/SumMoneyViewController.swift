@@ -7,12 +7,31 @@
 //
 
 import UIKit
+import RealmSwift
+
 class SumMoneyViewController: UIViewController {
     @IBOutlet weak var sumMoneyLabel: UILabel!
-    var sumMoney:String!
+    var currentYearNumber = 0
+    let currentDate = NSDate()
+    var sortMonths = realm.objects(Month.self)
+    var notificationToken: NotificationToken? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
-        sumMoneyLabel.text = sumMoney
+        currentYearNumber = DateToString(currentDate: currentDate as Date).dateToString().year
+        sortMonths = realm.objects(Month.self).filter("year = \(currentYearNumber)").sorted(byProperty: "month", ascending: false)
+        print(sortMonths)
+        setSumMoneyLabel()
+        notificationToken = sortMonths.addNotificationBlock { changes in
+            switch changes {
+            case .initial( _):
+                break
+            case .update(_ , _, _, _):
+                self.setSumMoneyLabel()
+                break
+            case .error:
+                break
+            } 
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +39,14 @@ class SumMoneyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setSumMoneyLabel(){
+        if sortMonths.count > 1 {
+            print("总结")
+            sumMoneyLabel.text = String(sortMonths[0].totalAmount)
+        } else {
+            sumMoneyLabel.text = "0"
+        }
+    }
 
     /*
     // MARK: - Navigation

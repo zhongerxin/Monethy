@@ -18,8 +18,5 @@ class Month: Object {
         return records.sum(ofProperty: "amount") as Int
     }
     let records = List<Record>()
-    
-//  override static func ignoredProperties() -> [String] {
-//    return []
-//  }
+
 }

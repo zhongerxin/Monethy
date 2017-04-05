@@ -9,23 +9,43 @@
 import UIKit
 import Charts
 import pop
+import RealmSwift
 
 class YearChartViewController: UIViewController, IAxisValueFormatter, ChartViewDelegate {
     
     @IBOutlet weak var barChartView: BarChartView!
     
     var months:[String]!
+    var currentYearNumber = 0
+    var sortMonths = realm.objects(Month.self)
+    var moneyNumbers = [Double]()
     
+    let currentDate = NSDate()
     let markerView = UIView()
     let markerBg = UIImageView(image: #imageLiteral(resourceName: "marker_bg"))
     let valueLabel = UILabel()
+    var notificationToken: NotificationToken? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        currentYearNumber = DateToString(currentDate: currentDate as Date).dateToString().year
+        sortMonths = realm.objects(Month.self).filter("year = \(currentYearNumber)").sorted(byProperty: "month", ascending: true)
+        setMonthMoneyNumbers()
         barChartView.delegate = self
         months = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
-        let moneyNumbers = [5000.0, 5000.0, 5000.0, 5000.0, 2000.0, 5000.0, 9000.0, 4000.0, 5000.0, 5000.0, 5000.0, 5000.0]
         setChart(dataPoints: months, values: moneyNumbers)
+        notificationToken = sortMonths.addNotificationBlock { changes in
+            switch changes {
+            case .initial( _):
+                break
+            case .update(_ , _, _, _):
+                self.setMonthMoneyNumbers()
+                self.setChart(dataPoints: self.months, values: self.moneyNumbers)
+                break
+            case .error:
+                break
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -151,9 +171,16 @@ class YearChartViewController: UIViewController, IAxisValueFormatter, ChartViewD
         animation?.toValue = toValue
         animation?.duration = duration
         animation?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-//        animateView.layer.pop_add(scaleAnimation, forKey: "size")
         animateView.layer.pop_add(animation, forKey: "opacity")
         animation?.completionBlock = completion
+    }
+    
+    func setMonthMoneyNumbers(){
+        var currentNumbers = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,]
+        for i in sortMonths{
+            currentNumbers[i.month-1] = Double(i.totalAmount)
+        }
+        moneyNumbers = currentNumbers
     }
 
 

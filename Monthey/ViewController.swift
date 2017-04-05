@@ -10,7 +10,10 @@ import UIKit
 import pop
 import RealmSwift
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate{
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate,RecordViewDelegate{
+    
+    var delegate:AddRecordViewDelegate?
+    var pickerDelegate:PickerViewDelegate?
     //UI
     @IBOutlet weak var monthMoneyTable: UITableView!
     @IBOutlet weak var circleImage: UIImageView!
@@ -18,17 +21,49 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var topScroll: UIScrollView!
     @IBOutlet weak var pageControll: UIPageControl!
     
-    //var
-    var months = realm.objects(Month.self)
+    @IBOutlet weak var addRecordBg: UIView!
+    @IBOutlet weak var addRecordButton: UIButton!
     
+    @IBOutlet weak var cardView: UIView!
+    //layout
+    @IBOutlet weak var addRecordBgWidth: NSLayoutConstraint!
+    @IBOutlet weak var addRecordBgHeight: NSLayoutConstraint!
+    @IBOutlet weak var addRecordBgBottom: NSLayoutConstraint!
+    @IBOutlet weak var addRecordButtonBottom: NSLayoutConstraint!
+    
+    var buttonBottom:CGFloat!
+    var buttonHeight:CGFloat!
+    
+    //var
+    var sortMonths = realm.objects(Month.self).sorted(byProperty: "month", ascending: false)
+    var sortYears = realm.objects(Month.self).sorted(byProperty: "year", ascending: false)
+    var accounts = realm.objects(Account.self)
+    var groupYears = [Int]()
+    var notificationToken: NotificationToken? = nil
     
     //let
     private let insetHeight:CGFloat = 232
     let pageControllers = [SumMoneyViewController(),YearChartViewController()]
+    let pickerView = PickerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
+        //Realm初始化
+        self.groupYears = self.groupByMonth()
+        notificationToken = sortMonths.addNotificationBlock { changes in
+            switch changes {
+            case .initial( _):
+                print(222)
+                break
+            case .update(_ , _, _, _):
+                self.groupYears = self.groupByMonth()
+                self.monthMoneyTable.reloadData() 
+                break
+            case .error:
+                break
+            }
+        }
         //UI初始化
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -42,25 +77,77 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         setTopScroll()
         pageControll.numberOfPages = pageControllers.count
         pageControll.defersCurrentPageDisplay = true
+        
+        //addRecord初始化
+        setAddRecord()
+        
+        //pickerView初始化
+        setPickerView()
+        
+        //layout
+        buttonHeight = addRecordBgHeight.constant
+        buttonBottom = addRecordBgBottom.constant
+        
+        //通知
+        NotificationCenter.default.addObserver(self,selector: #selector(self.keyboardWillChange(_:)),name: .UIKeyboardWillChangeFrame, object: nil)
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //初始化
+    func setAddRecord() {
+        addRecordButton.layer.borderColor = UIColor.clear.cgColor
+        addRecordBg.layer.cornerRadius = 26
+        addRecordBg.layer.shadowColor = UIColor(colorLiteralRed: 1/255, green: 40/255, blue: 98/255, alpha: 39/100).cgColor
+        addRecordBg.layer.shadowOffset = CGSize(width: 0, height: 2)
+        addRecordBg.layer.shadowRadius = 5
+        addRecordBg.layer.shadowOpacity = 0.8
+        cardView.alpha = 0.01
+    }
+    
+    func setPickerView() {
+        let frame = CGRect(x:CGFloat(0),y:CGFloat(view.frame.height + 1),width:view.frame.width,height:CGFloat(261))
+        pickerView.view.frame = frame
+        pickerView.delegate = self
+        pickerDelegate = pickerView
+        view.addSubview(pickerView.view)
+    }
+    
+    func groupByMonth() -> [Int]{
+        var years = [Int]()
+        var groups = [Int]()
+        for i in sortYears {
+            years.append(i.year)
+        }
+        for year in years {
+            if !groups.contains(year) {
+                groups.append(year)
+            }
+        }
+        return groups
+    }
+    
     //数据部分
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return groupYears.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 20
+        return sortMonths.filter("year = \(groupYears[section])").count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "monthMoneyCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "monthMoneyCell", for: indexPath) as! MonthRecordTableViewCell
+        
+        let month = sortMonths.filter("year = \(groupYears[indexPath.section])")[indexPath.row]
+        cell.moneyAmountNumber.text = String(month.totalAmount)
+        cell.monthNumber.text = String(month.month)
         return cell
         
     }
@@ -69,6 +156,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.performSegue(withIdentifier: "toMonthDetail", sender: indexPath)
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let  headerCell = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! MonthHeaderCell
+        switch section {
+        case 0:
+            headerCell.isHidden = true
+        default:
+            headerCell.yearLabel.text = String(groupYears[section])
+        }
+        return headerCell
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        switch section {
+        case 0:
+            return 0
+        default:
+            return 25
+        }
+    }
     
     //交互部分
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -141,11 +246,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         topScroll.isPagingEnabled = true
         
         for i in 0 ..< 2 {
-            let frame = CGRect(x:CGFloat(view.bounds.width * CGFloat(i)),y:CGFloat(0),width:scrollWidth,height:CGFloat(scrollHeight))
+            let frame = CGRect(x:view.bounds.width * CGFloat(i),y:0,width:scrollWidth,height:scrollHeight)
             switch i {
             case 0:
                 let subView = pageControllers[i] as! SumMoneyViewController
-                subView.sumMoney = "999"
                 subView.view.frame = frame
                 topScroll.addSubview(subView.view)
             default:
@@ -155,10 +259,185 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
     }
-
-
+    func keyboardWillChange(_ notification: NSNotification) {
+        if let userInfo = notification.userInfo,
+            let value = userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue,
+            let duration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as? Double,
+            let curve = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? UInt {
+            let frame = value.cgRectValue
+            var intersection = frame.intersection(self.view.frame)
+            //当键盘消失，让view回归原始位置
+            if intersection.height == 0.0 {
+                intersection = CGRect(x: intersection.origin.x, y: intersection.origin.y, width: intersection.width, height: self.view.center.y - view.frame.height * 0.85/2 - 10)
+            }
+            addRecordBgBottom.constant = intersection.height + 10
+            UIView.animate(withDuration: duration, delay: 0.0,
+                           options: UIViewAnimationOptions(rawValue: curve), animations: {
+                            _ in
+                            //改变下约束
+                            self.view.layoutIfNeeded()
+            }, completion: nil)
+        }
+    }
     
+    
+    //tap
+    
+    @IBAction func tapAddButton(_ sender: Any) {
+        let  a = sender as! UIButton
+        switch a.state.rawValue {
+        case 1:
+            delegate?.setShowAccounts()
+            delegate?.setTableView()
+            delegate?.setMonthButton()
+            delegate?.setRecordsAmountInputs()
+            coreAnimation(true)
+            popAnimation(true)
+            delegate?.setScrollToCurrentYear()
+            if preTapedButton == nil {
+                isAddButtonActive(sender: false)
+            }
+        default:
+            if preTapedButton == nil {
+                return
+            } else {
+                delegate?.resignTextField()
+                delegate?.addRecordsToRealm()
+                delegate?.resetMonthButton()
+                coreAnimation(false)
+                popAnimation(false)
+            }
+            preTapedButton = nil
+        }
+    }
+    
+    
+    //animation
+    func coreAnimation(_ sender: Bool) {
+        let cardHeight:CGFloat = view.frame.height * 0.85
+        var scale:CGFloat!
+        var alpha:CGFloat!
+        
+        switch sender {
+        case true:
+            scale = 1
+            alpha = 0.01
+            self.addRecordBgWidth.constant = self.view.frame.width - 20
+            self.addRecordBgHeight.constant = cardHeight
+            self.addRecordBgBottom.constant = self.view.center.y - cardHeight/2
+            self.addRecordButtonBottom.constant = 16
+        default:
+            scale = 0.01
+            alpha = 1
+            self.addRecordBgWidth.constant = buttonHeight
+            self.addRecordBgHeight.constant = buttonHeight
+            self.addRecordBgBottom.constant = buttonBottom
+            self.addRecordButtonBottom.constant = 0
+        }
+        UIView.animate(withDuration: 0.3, delay: 0, options:.curveEaseOut, animations: {
+            self.view.layoutIfNeeded()
+            self.addRecordButton.isSelected = sender
+            self.navigationController?.navigationBar.alpha = alpha
+            self.cardView.transform = CGAffineTransform(scaleX: 1, y: scale)
+            self.cardView.alpha = scale
+        }, completion: {_ in
+        })
+    }
+    
+    func popAnimation(_ sender:Bool) {
+        var toColor:CGColor!
+        var toRadius:Int!
+//        var toAlpha:CGFloat
+        switch sender {
+        case true:
+            toColor = UIColor.white.cgColor
+            toRadius = 4
+//            toAlpha = 0.8
+        default:
+            toColor = UIColor.clear.cgColor
+            toRadius = 26
+//            toAlpha = 0.0
+        }
+        
+        let bordedrAnimation = POPBasicAnimation(propertyNamed: kPOPLayerBorderColor)
+        bordedrAnimation?.toValue = toColor
+        bordedrAnimation?.duration = 0.3
+        bordedrAnimation?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        addRecordButton.layer.pop_add(bordedrAnimation, forKey: "borderColor")
+        
+        let cornerAnimation = POPBasicAnimation(propertyNamed: kPOPLayerCornerRadius)
+        cornerAnimation?.toValue = toRadius
+        cornerAnimation?.duration = 0.3
+        cornerAnimation?.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        addRecordBg.layer.pop_add(cornerAnimation, forKey: "cornerRadius")
+    }
+    
+    //segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "addRecord"? :
+            let desinationController = segue.destination as! AddRecordCardViewController
+            delegate = desinationController
+            desinationController.delegate = self
+        case "toMonthDetail"? :
+            let desinationController = segue.destination as! MonthDetailViewController
+            let indexPath = sender as! IndexPath
+            let month = sortMonths.filter("year = \(groupYears[indexPath.section])")[indexPath.row]
+            desinationController.month = month
+        default:
+            break
+        }
+    }
+    //protocol
+    func cancelCard() {
+        delegate?.resetMonthButton()
+        coreAnimation(false)
+        popAnimation(false)
+        isAddButtonActive(sender: true)
+        preTapedButton = nil
+    }
+    
+    func appearPickerView(sender:Bool) {
+        var frame:CGRect!
+        var constant:CGFloat!
+        switch sender {
+        case true:
+            frame = CGRect(x:CGFloat(0),y:CGFloat(view.frame.height - 261),width:view.frame.width,height:CGFloat(261))
+            constant = frame.height + 10
+            pickerDelegate?.reloadData()
+        default:
+            frame = CGRect(x:CGFloat(0),y:CGFloat(view.frame.height + 1),width:view.frame.width,height:CGFloat(261))
+            constant = self.view.center.y - view.frame.height * 0.85/2
+        }
+        addRecordBgBottom.constant = constant
+        UIView.animate(withDuration: 0.2, delay: 0, options:.curveEaseOut, animations: {
+            self.pickerView.view.frame = frame
+            self.view.layoutIfNeeded()
+        }, completion: {_ in
+        })
+    }
+    
+    func isAddButtonActive(sender:Bool) {
+        if sender {
+            addRecordButton.alpha = 1
+        } else {
+            addRecordButton.alpha = 0.5
+        }
+    }
+    
+//    func isEnabledAddButton(){
+//        if preTapedButton != nil {
+//            addRecordButton.isEnabled = true
+//        } else {
+//            addRecordButton.isEnabled = false
+//        }
+//    }
+}
 
-
+protocol RecordViewDelegate {
+    func cancelCard()
+    func appearPickerView(sender:Bool)
+    func isAddButtonActive(sender:Bool)
+//    func isEnabledAddButton()
 }
 
